@@ -13,7 +13,7 @@
     <script src="js/modal-multi.js"></script>
     <script type="text/javascript" src="js/modal-fixed.js"></script>
     <script type="text/javascript" src="js/background_full.js"></script>
-        
+    
     <header>
         <div class="inner">
             <div class="flexbox">
@@ -706,37 +706,29 @@
         <footer>
             <small>&copy;2020 Koichiro Azuma</small>
         </footer>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="modal-fixed.js"></script>
     </div>
-
         <!-- スクリプト -->
-    <script>
-        import smoothscroll from "smoothscroll-polyfill";
+        <script>
+            Element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+            
+            import smoothscroll from 'smoothscroll-polyfill';
+            smoothscroll.polyfill();
 
-        // kick off the polyfill!
-        smoothscroll.polyfill();
-
-        document.addEventListener("click", e => {
-        const target = e.target;
-        // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
-        if (!target.classList.contains("js-smooth-scroll")) return;
-        e.preventDefault();
-        const targetId = target.hash;
-        const targetElement = document.querySelector(targetId);
-        // 画面上部から要素までの距離
-        const rectTop = targetElement.getBoundingClientRect().top;
-        // 現在のスクロール距離
-        const offsetTop = window.pageYOffset;
-        // スクロール位置に持たせるバッファ
-        const buffer = 50;
-        const top = rectTop + offsetTop - buffer;
-
-        window.scrollTo({
-        top,
-        behavior: "smooth"
-        });
-        });
-          </script>
+            const targetElement = document.querySelector(mySelecor);
+            // 画面上部から要素までの距離
+            const rectTop = targetElement.getBoundingClientRect().top
+            // 現在のスクロール距離
+            const offsetTop = window.pageYOffset
+            // スクロール位置に持たせるバッファ
+            const buffer = 50
+            const top = rectTop + offsetTop - buffer
+            window.scrollTo({
+            top,
+            behavior: "smooth"
+            });
+        </script>
     </body>
 </html>
