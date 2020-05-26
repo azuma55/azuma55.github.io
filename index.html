@@ -84,7 +84,7 @@
     </div>
 
     <!-- ABOUT -->
-    <section id="about" class="anchor">
+    <section id="about" class="js-smooth-scroll">
         <h2><svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="141px" height="32px">
             <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
@@ -196,7 +196,7 @@
     </section>
 
     <!-- NEWS -->
-    <section id="news" class="anchor">
+    <section id="news" class="js-smooth-scroll">
         <h2><svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -244,7 +244,7 @@
     </section>
 
     <!-- WORK -->
-    <section id="work" class="anchor">
+    <section id="work" class="js-smooth-scroll">
         <h2><svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -686,7 +686,7 @@
     
 
         <!-- CONTACT -->
-        <section id="contact" class="anchor">
+        <section id="contact" class="js-smooth-scroll">
             <h2><svg 
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -709,5 +709,34 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="modal-fixed.js"></script>
     </div>
+
+        <!-- スクリプト -->
+    <script>
+        import smoothscroll from "smoothscroll-polyfill";
+
+        // kick off the polyfill!
+        smoothscroll.polyfill();
+
+        document.addEventListener("click", e => {
+        const target = e.target;
+        // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+        if (!target.classList.contains("js-smooth-scroll")) return;
+        e.preventDefault();
+        const targetId = target.hash;
+        const targetElement = document.querySelector(targetId);
+        // 画面上部から要素までの距離
+        const rectTop = targetElement.getBoundingClientRect().top;
+        // 現在のスクロール距離
+        const offsetTop = window.pageYOffset;
+        // スクロール位置に持たせるバッファ
+        const buffer = 50;
+        const top = rectTop + offsetTop - buffer;
+
+        window.scrollTo({
+        top,
+        behavior: "smooth"
+        });
+        });
+          </script>
     </body>
 </html>
