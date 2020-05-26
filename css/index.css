@@ -391,11 +391,16 @@ content: '';
     font-size: 1.rem;
 }
 #about dl dd{
-    padding: 0 0 2rem 3rem;
+    padding: 0 0 1rem 1rem;
     font-size: 1.5rem;
 }
 #about dd{
     color: #b3b3b3;
+}
+#about dd:after{
+    display: block;
+    content: "";
+    clear: both;
 }
 #about .exhibition{
     display: block;
@@ -406,7 +411,9 @@ content: '';
     display: block;
     text-align: center;
     padding-bottom: 1rem;
-
+}
+#about .list{
+    height: 5rem;
 }
 #about .exhibition .exhibition_line{
     border-top: 1px solid #ffffff;
@@ -745,29 +752,11 @@ header .logo-img img {
     text-align: center;
 	display: block;
 }
-#about .exhibition ul{
-	padding-left: 0;
-    display: inline-block;
-}
-#about .exhibition ul li {
-    padding: 0 1rem;
-    font-size: 1.3rem;
-    text-align: left;
-}
 #about .award{
     width: 100%;
     padding: 0 2rem;
     text-align: center;
 	display: block;
-}
-#about .award ul{
-	padding-left: 0;
-    display: inline-block;
-}
-#about .award ul li {
-    padding: 0 1rem;
-    font-size: 1.3rem;
-    text-align: left;
 }
 .column_reverse {
     -webkit-box-orient: vertical;
