@@ -57,14 +57,6 @@ section {
     margin: auto;
     padding: 0 12rem;
 }
-.line{
-    height: 2px;
-    background-color: #ffffff;
-    border: none;
-    text-align: left;
-    width: 32%;
-    margin: 3rem 0 7rem;
-}
 .all_container {
     background-color:#000;
     color: #ffffff;
@@ -356,14 +348,6 @@ header .nav_sp {
 .sp_visual{
     display: none;
 }
-.column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
 #about .content{
     height: 100%
 }
@@ -379,14 +363,6 @@ header .nav_sp {
     font-size: 3.5rem;
     font-weight: lighter;
 }
-#about .cnt_column p{
-    font-size: 1.5rem;
-    line-height: 2.3;
-    display: inline-block;
-    text-align: left;
-    padding: 4rem 6.5rem 0 0;
-    color: #b3b3b3;
-}
 #about .column .cnt_column {
     width: 50%;
     height: 50%;
@@ -395,30 +371,68 @@ header .nav_sp {
 #about .cnt_column h3{
     display: block;
     text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+#about .cnt_column p{
+    font-size: 1.8rem;
+    line-height: 2.3;
+    padding-bottom: 3rem;
+    color: #b3b3b3;
+}
+#about .cnt_column p:nth-of-type(2){
+    font-size: 1.3rem;
+    line-height: 2.3;
+    text-align: left;
+    padding-bottom: 3rem;
+    color: #b3b3b3;
+}
+#about .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 #about .colum h3{
-        border-bottom: 1px solid #fff;
-        width: 32%;
-        overflow: hidden;
-        text-indent: 100%;
-        white-space: nowrap;
+    border-bottom: 1px solid #fff;
+    width: 32%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
 }
-
+#about .exhibition{
+    display: block;
+    margin-top: 8rem;
+    width: 50%;
+}
+#about .exhibition h3{
+    display: block;
+    padding-bottom: 1rem;
+    background-image: url(../img/exhibition.svg);
+    background-size: 119px 22px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+    width: 23%;
+    margin: 0 auto;
+}
 #about dl{
     padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     align-items: baseline;
+    font-size: 1.3rem;
 }
 #about dl dt{
-    font-size: 1.5rem;
     width: 12%;
 }
 #about dl dd{
     width: 88%;
     margin-inline-start: 0;
-    font-size: 1.5rem;
     padding-bottom: 1rem;
 }
 #about dd{
@@ -428,16 +442,6 @@ header .nav_sp {
     display: block;
     content: "";
     clear: both;
-}
-#about .exhibition{
-    display: block;
-    margin-top: 8rem;
-    width: 50%;
-}
-#about .exhibition h3{
-    display: block;
-    text-align: center;
-    padding-bottom: 1rem;
 }
 #about .list{
     height: 5rem;
@@ -450,8 +454,16 @@ header .nav_sp {
 }
 #about .award h3{
     display: block;
-    text-align: center;
     padding-bottom: 1rem;
+    background-image: url(../img/award.svg);
+    background-size: 73px 22px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+    width: 16%;
+    margin: 0 auto;
 }
 .margin-indent{
     margin-left: 7rem;
@@ -563,8 +575,11 @@ header .nav_sp {
     padding-right: 0.5rem;
 }
 #work .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 100%;
-	height: 31.2rem;
+    height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -574,24 +589,19 @@ header .nav_sp {
 	transition:	all 0.6s ease;
 }
 #work .work_contents .caption {
-    font-size: 1.3rem;
-    color:#fff;
-    position: absolute;
+    color: #fff;
+    position: relative;
     text-align: center;
-    top:  0;                     /* 位置指定 */
-    bottom:  0;                  /* 位置指定 */
-    left:  0;                    /* 位置指定 */
-    right:  0;                   /* 位置指定 */
-    margin:  auto;               /* 中央寄せ */
-    width:  25rem;               /* 幅指定 */
-    height: 20rem;                /* 高さ指定 */
+    width: 15vw;
+    height: 7vw;
 }
 #work .work_contents .caption h5{
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: lighter;
 }
 #work .work_contents .caption p{
     font-size: 1vw;
+    padding-top: 1rem;
     font-weight: lighter;
 }
 #work .work_contents .caption p:nth-of-type(2){
@@ -805,8 +815,8 @@ header .logo-img img {
 }
 .anchor{
     display: block;
-    padding-top: 9rem;
-    margin-top: -9rem;
+    padding-top: 30rem;
+    margin-top: -30rem;
 }
 .content{
     padding: 0;
@@ -837,9 +847,8 @@ header .logo-img img {
 }
 #about .cnt_column p{
     font-size: 1.3rem;
-    padding: 4rem 2rem 0;
 }
-#about dl{
+#about .cnt_column p:nth-of-type(2){
     display: inline-block;
 }
 #about dl dd{
