@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.13" height="33.09" viewBox="0 0 33.13 33.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="6711.75" y="1233.66" width="33.13" height="33.09" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#b3b3b3"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="_CLOSE_のコピー" data-name="×CLOSE のコピー" class="cls-1" d="M6711.75,1262.82l3.92,3.92,12.62-12.73,12.59,12.73,3.98-3.92-12.72-12.55,12.72-12.65-3.98-3.96-12.59,12.69-12.62-12.69-3.92,3.96,12.73,12.65Z" transform="translate(-6711.75 -1233.66)"/>
+</svg>
