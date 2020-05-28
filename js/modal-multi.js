@@ -62,7 +62,7 @@ for(var i=0,l=modals.length; l>i; i++){
 		//if($("#modal-overlay")[0]) $("#modal-overlay").remove() ;		//現在のモーダルウィンドウを削除して新しく起動する
 
 		//オーバーレイを出現させる
-		$( "body" ).append( '<div id="modal-overlay"></div>' ) ;
+		$( "body" ).append( '<div id="modal-overlay"></div>' ).addClass('fixed');//背景固定
 		$( "#modal-overlay" ).fadeIn( "fast" ) ;
 
 		//コンテンツをセンタリングする
@@ -72,8 +72,9 @@ for(var i=0,l=modals.length; l>i; i++){
 		$( nowModalSyncer ).fadeIn( "slow" ) ;
 
 		//[#modal-overlay]、または[.button-link]をクリックしたら…
-		$( "#modal-overlay,.button-link" ).unbind().click( function() {
-
+		$( "#modal-overlay,.button-link" ).off('click').on('click.close-modal',function() {
+			$('body').removeClass('fixed');//背景固定を解除
+			
 			//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
 			$( "#" + target + ",#modal-overlay" ).fadeOut( "fast" , function() {
 
