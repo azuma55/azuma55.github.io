@@ -74,7 +74,7 @@ for(var i=0,l=modals.length; l>i; i++){
 		//[#modal-overlay]、または[.button-link]をクリックしたら…
 		$( "#modal-overlay,.button-link" ).off('click').on('click.close-modal',function() {
 			$('body').removeClass('fixed');//背景固定を解除
-			
+
 			//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
 			$( "#" + target + ",#modal-overlay" ).fadeOut( "fast" , function() {
 

@@ -186,9 +186,7 @@ header .nav_sp {
     .cp_fullscreenmenu .menu .menucont {
     font-size: 5vw;
     position: relative;
-    top: 50%;
-    margin-top: -20rem;
-    padding-bottom: 2rem;
+    top: 20%;
     text-align: center;
     }
     .cp_fullscreenmenu .menu ul {
@@ -220,7 +218,7 @@ header .nav_sp {
     .cp_fullscreenmenu #menuToggle:checked ~ .menuEffects {
     visibility: visible;
     transition: opacity 0.5s;
-    opacity: 0.9;
+    opacity: 1;
     }
     .cp_fullscreenmenu #menuToggle:checked ~ .menuEffects ul {
     opacity: 1;
@@ -383,6 +381,7 @@ header .nav_sp {
     line-height: 2.3;
     text-align: left;
     color: #b3b3b3;
+    padding-left: 3rem;
 }
 #about .column {
     display: -webkit-box;
@@ -399,10 +398,11 @@ header .nav_sp {
     text-indent: 100%;
     white-space: nowrap;
 }
-#about .exhibition{
+#about .exhibition , .award{
     display: block;
     margin-top: 6rem;
     width: 50%;
+    padding-left: 3rem;
 }
 #about .exhibition h3{
     display: block;
@@ -442,12 +442,6 @@ header .nav_sp {
 }
 #about .list{
     height: 5rem;
-}
-#about .award{
-    display: block;
-    margin-top: 8rem;
-    padding-left: 3.5rem;
-    width: 50%;
 }
 #about .award h3{
     display: block;
@@ -494,6 +488,7 @@ header .nav_sp {
 #news .cnt_column{
     position: relative;
     overflow: hidden;
+    padding: 1rem;
 }
 #news .cnt_img .mask{
 	width: 100%;
@@ -516,6 +511,9 @@ header .nav_sp {
 	padding-top: 20rem;	/* ホバーで下にずらす */
 }
 /** work **/
+#work .work_contents_sp{
+    display: none;
+}
 #work h2{
     background: url(../img/h2_work.svg) no-repeat;
     background-position-x: 3.5rem;
@@ -715,7 +713,7 @@ header .nav_sp {
 #contact h2{
     background: url(../img/h2_contact.svg) no-repeat;
     background-position-x: 3.5rem;
-    background-size: 141px 32px;
+    background-size: 186px 32px;
     padding-bottom: 3rem;
 }
 #contact p{
@@ -743,11 +741,23 @@ footer small{
 /* ブラウザサイズが 850px以下の時 スマホ
 ヘッダーのSNSが見えるギリギリサイズ(5/22現在)*/
 @media all and (max-width: 850px) {
-#about h2 , #contact h2{
+h2{
     font-size: 2rem;
-    background-size: 11rem;
     padding-bottom: 1.2rem;
     width: 50%;
+}
+#about h2{
+    background-size: 9rem;
+    padding-bottom: 1.2rem;
+}
+#about h2 , #work h2{
+    background-size: 9rem;
+}
+#news h2{
+    background-size: 7rem;
+}
+#contact h2{
+    background-size: 12rem;
 }
 p{
     margin:0;
@@ -851,9 +861,13 @@ header .logo-img img {
 #about .cnt_column p:nth-of-type(2){
     display: inline-block;
     font-size: 1rem;
+    padding: initial;
 }
 #about dl{
     font-size: 1rem;
+    font-size: 1rem;
+    width: 80vw;
+    margin: 0 auto;
 }
 #about dl dd{
     text-align: left;
@@ -893,6 +907,13 @@ header .logo-img img {
 #news p{
     font-size: 1.3rem;
 }
+#work .work_contents{
+    display: none;
+}
+#work .work_contents_sp{
+    padding-bottom: 3rem;
+    display: block;
+}
 #work h3{
     padding: 2rem 0 0 3.5rem;
     font-size: 2rem;
@@ -900,13 +921,10 @@ header .logo-img img {
 #work h4{
     margin: initial;
 }
-#work .work_contents .pc{
-    display: none;
-}
 #work .button-link-pc{
     display: none;
 }
-#work .work_contents .sp{
+#work .work_contents_sp .sp{
     display: block;
     width: 100%;
 }
