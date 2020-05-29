@@ -371,20 +371,17 @@ header .nav_sp {
 #about .cnt_column h3{
     display: block;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 #about .cnt_column p{
-    font-size: 1.8rem;
-    line-height: 2.3;
-    padding-bottom: 3rem;
-    color: #b3b3b3;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    padding-bottom: 4rem;
 }
 #about .cnt_column p:nth-of-type(2){
-    font-size: 1.3rem;
     line-height: 2.3;
     text-align: left;
-    padding-bottom: 3rem;
     color: #b3b3b3;
 }
 #about .column {
@@ -404,24 +401,24 @@ header .nav_sp {
 }
 #about .exhibition{
     display: block;
-    margin-top: 8rem;
+    margin-top: 6rem;
     width: 50%;
 }
 #about .exhibition h3{
     display: block;
     padding-bottom: 1rem;
     background-image: url(../img/exhibition.svg);
-    background-size: 119px 22px;
+    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     border-bottom: 1px solid #fff;
-    width: 23%;
+    width: 25%;
     margin: 0 auto;
 }
 #about dl{
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -456,13 +453,13 @@ header .nav_sp {
     display: block;
     padding-bottom: 1rem;
     background-image: url(../img/award.svg);
-    background-size: 73px 22px;
+    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     border-bottom: 1px solid #fff;
-    width: 16%;
+    width: 17%;
     margin: 0 auto;
 }
 .margin-indent{
@@ -746,8 +743,11 @@ footer small{
 /* ブラウザサイズが 850px以下の時 スマホ
 ヘッダーのSNSが見えるギリギリサイズ(5/22現在)*/
 @media all and (max-width: 850px) {
-h2{
-    font-size: 5rem;
+#about h2 , #contact h2{
+    font-size: 2rem;
+    background-size: 11rem;
+    padding-bottom: 1.2rem;
+    width: 50%;
 }
 p{
     margin:0;
@@ -833,23 +833,27 @@ header .logo-img img {
 .column .cnt_img img {
     height: 100%;
 }
-.column .cnt_column {
-    width: 100%;
-    padding-bottom: 6rem;
-}
 #about .column .cnt_column {
     width: 100%;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 #about .cnt_column h2{
     padding-right: 3.5rem;
     font-size: 4rem;
 }
+#about .cnt_column h3{
+    font-size: 3rem;
+}
 #about .cnt_column p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1;
 }
 #about .cnt_column p:nth-of-type(2){
     display: inline-block;
+    font-size: 1rem;
+}
+#about dl{
+    font-size: 1rem;
 }
 #about dl dd{
     text-align: left;
@@ -859,6 +863,9 @@ header .logo-img img {
     padding: 0 2rem;
     text-align: center;
 	display: block;
+}
+#about .exhibition h3{
+    width: 20%;
 }
 #about .award{
     width: 100%;
@@ -918,7 +925,7 @@ header .logo-img img {
 }
 .modal-content {
     width: 100%;
-    padding: 3rem 0;
+    padding: 6rem 0;
 }
 .modal-content .contaier{
     padding: 2rem 2rem 0;
