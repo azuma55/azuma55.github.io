@@ -91,7 +91,7 @@ header h1{
     background-image: url(../img/logo01.png);
     background-repeat: no-repeat;
     background-size: 85%;
-    margin-left: 3.2rem;
+    margin-left: 40px;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -100,23 +100,20 @@ header h1{
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    margin-right: 2.5rem;
-}
-.nav-global ul{
-    margin-left: 2rem;
+    margin-right: 70px;
 }
 .nav-global li {
-    margin-right: 37px;
-    font-size: 1.6rem;
-}
-.nav-global li:last-child {
-    margin-right: 0;
+    margin-right: 61px;
+    font-size: 1.5rem;
 }
 .nav-global a {
     position: relative;
     display: inline-block;
     color: #fff;
     text-decoration: none;
+}
+.nav-global .flexbox a:hover{
+    color: #ffffff
 }
 .nav-global .flexbox a::after {
     position: absolute;
@@ -139,6 +136,9 @@ header h1{
 }
 .nav-global .sns li{
     margin-right: 1rem;
+}
+.nav-global .sns li:nth-of-type(3){
+    margin: 0;
 }
 header .nav_sp {
     display: none;
@@ -189,9 +189,9 @@ input {
     background-size: 100%;
     }
     .cp_fullscreenmenu .menu .menucont {
-    font-size: 5vw;
+    font-size: 2rem;
     position: relative;
-    top: 20%;
+    top: 16%;
     text-align: center;
     }
     .cp_fullscreenmenu .menu ul {
@@ -201,50 +201,49 @@ input {
     }
 .cp_fullscreenmenu .menu .sns {
     display: flex;
-    padding-top: 2rem;
     justify-content: center;
 }
 .cp_fullscreenmenu .menu .sns li{
-    width: 4rem;
+    width: 3rem;
     margin-right: 2.5rem;
 }
 .cp_fullscreenmenu .menu .sns li:nth-of-type(3){
-    width: 4rem;
+    width: 3rem;
     margin: initial;
 }
-    .cp_fullscreenmenu .menu ul li,
-    .cp_fullscreenmenu .menu ul li a {
+.cp_fullscreenmenu .menu ul li,
+.cp_fullscreenmenu .menu ul li a {
     transition: all 0.3s ease;
-    }
-    .cp_fullscreenmenu .menu ul li a {
+}
+.cp_fullscreenmenu .menu ul li a {
     display: block;
-    padding: 3rem 0;
-    }
-    .cp_fullscreenmenu .menu ul li a:hover {
+    padding: 2rem 0;
+}
+.cp_fullscreenmenu .menu ul li a:hover {
     color: #ffffff;
-    }
-    /*クリックしたらメニューが開閉の動作*/
-    .cp_fullscreenmenu .menuEffects {
+}
+/*クリックしたらメニューが開閉の動作*/
+.cp_fullscreenmenu .menuEffects {
     visibility:  hidden;
     transition: opacity 0.5s, visibility 0.5s;
     opacity: 0;
-    }
-    .cp_fullscreenmenu .menuEffects ul {
+}
+.cp_fullscreenmenu .menuEffects ul {
     transition: all 0.5s;
     transform: translateY(0%);
-    }
-    .cp_fullscreenmenu #menuToggle:checked ~ .menuEffects {
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .menuEffects {
     visibility: visible;
     transition: opacity 0.5s;
     opacity: 1;
-    }
-    .cp_fullscreenmenu #menuToggle:checked ~ .menuEffects ul {
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .menuEffects ul {
     opacity: 1;
-    }
-    .cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open {
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open {
     background-color: transparent;
-    }
-    .cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:before {
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:before {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -252,8 +251,8 @@ input {
     content: '';
     transform: rotate(45deg);
     background-color: #ffffff;
-    }
-    .cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:after {
+}
+.cp_fullscreenmenu #menuToggle:checked ~ .hamburger .open:after {
     position: relative;
     z-index: 1;
     top: 0;
@@ -261,7 +260,7 @@ input {
     content: '';
     transform: rotate(-45deg);
     background-color: #ffffff;
-    }
+}
 .cp_fullscreenmenu #menuToggle:not(:checked) ~ .menuEffects ul {
     transform: translateY(-30%);
 }
@@ -276,15 +275,15 @@ input {
     cursor: pointer;
     z-index: 100;
 }
-    .cp_fullscreenmenu .hamburger:hover .open:before {
+.cp_fullscreenmenu .hamburger:hover .open:before {
     top: -9px;
-    }
-    .cp_fullscreenmenu .hamburger:hover .open:after {
+}
+.cp_fullscreenmenu .hamburger:hover .open:after {
     top: 5px;
-    }
-    .cp_fullscreenmenu .open,
-    .cp_fullscreenmenu .open:before,
-    .cp_fullscreenmenu .open:after {
+}
+.cp_fullscreenmenu .open,
+.cp_fullscreenmenu .open:before,
+.cp_fullscreenmenu .open:after {
     position: relative;
     display: block;
     width: 24px;
@@ -292,20 +291,20 @@ input {
     border-radius: 2px;
     background-color: #ffffff;
     transition: all 0.3s ease;
-    }
-    .cp_fullscreenmenu .open {
+}
+.cp_fullscreenmenu .open {
     top: 8px;
     cursor: pointer;
-    }
-    .cp_fullscreenmenu .open:before {
+}
+.cp_fullscreenmenu .open:before {
     top: -8px;
     content: '';
     transform: rotate(0deg);
-    }
-    .cp_fullscreenmenu .open:after {
+}
+.cp_fullscreenmenu .open:after {
     top: 6px;
     content: '';
-    }
+}
     /** ハンバーガーend **/
 .visual{
     position: relative;
@@ -322,7 +321,6 @@ input {
     bottom     : 0;
     right      : 0;
     opacity    : 0;
-
 }
 .visual .visualimg{
 	animation-name: album;
@@ -394,7 +392,7 @@ input {
     text-align: left;
     color: #b3b3b3;
     padding-left: 3rem;
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 #about .column {
     display: -webkit-box;
@@ -435,7 +433,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    font-size: 0.9vw;
+    font-size: 1vw;
     width: 50rem;
 }
 #about dl dt{
@@ -608,11 +606,11 @@ input {
     height: 7vw;
 }
 #work .work_contents .caption h5{
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: lighter;
 }
 #work .work_contents .caption p{
-    font-size: 1vw;
+    font-size: 1.2vw;
     padding-top: 1rem;
     font-weight: lighter;
 }
@@ -750,7 +748,7 @@ footer {
     margin: 0 14rem 14rem;
 }
 footer small{
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #b3b3b3;
 }
 
@@ -820,7 +818,7 @@ header .logo-img img {
     background-position: center center;
     width: 100%;
     height: 50vh;
-    margin-bottom: 14rem;
+    margin-bottom: 7rem;
 }
 .sp_visual .visualimg{
     position   : absolute;
@@ -881,11 +879,11 @@ header .logo-img img {
 }
 #about .cnt_column p:nth-of-type(2){
     display: inline-block;
-    font-size: 1vw;
+    font-size: 1rem;
     padding: initial;
 }
 #about dl{
-    font-size: 1vw;
+    font-size: 1rem;
     width: 30rem;
     margin: 0 auto;
 }
