@@ -896,12 +896,6 @@ header .logo-img img {
     text-align: center;
 	display: block;
 }
-#about .exhibition h3{
-    width: 17%;
-}
-#about .award h3{
-    width: 11%;
-}
 #about .award{
     width: 100%;
     padding: 0 2rem;
