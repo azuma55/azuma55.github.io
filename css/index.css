@@ -29,6 +29,7 @@ h2 {
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
+    padding-bottom: 3rem;
 }
 h3 {
     margin: 0;
@@ -61,6 +62,10 @@ section {
     background-color:#000;
     color: #ffffff;
     height: auto;
+}
+#about , #news , #work , #contact{
+    margin-top: -60px;
+    padding-top: 60px;
 }
 header {
     align-items: center;
@@ -113,7 +118,7 @@ header h1{
     color: #fff;
     text-decoration: none;
 }
-.nav-global a::after {
+.nav-global .flexbox a::after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -125,7 +130,7 @@ header h1{
     transform-origin: right top;
     transition: transform .1.5s;
 }
-.nav-global a:hover::after {
+.nav-global .flexbox a:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
 }
@@ -142,38 +147,38 @@ header .nav_sp {
     position: relative;
 }
  /** ハンバーガー用start **/
-    header .cp_fullscreenmenu{
+header .cp_fullscreenmenu{
     display: none;
-    }
-    * {
+}
+* {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    }
-    a,
-    a:visited,
-    a:hover,
-    a:active {
+}
+a,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: inherit;
-    }
-    input {
+}
+input {
     display: none;
-    }
-    .cp_fullscreenmenu {
+}
+.cp_fullscreenmenu {
     position: fixed;
     z-index: 1;
-    top: 1.5rem;
-    right: 1rem;
-    }
+    top: 1rem;
+    right: 2rem;
+}
     /*menuコンテンツ*/
-    .cp_fullscreenmenu .menu {
+.cp_fullscreenmenu .menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #000000;
-    }
+}
     .cp_fullscreenmenu .menu label {
     position: absolute;
     top: 2rem;
@@ -194,6 +199,19 @@ header .nav_sp {
     padding: 0;
     list-style: none;
     }
+.cp_fullscreenmenu .menu .sns {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+}
+.cp_fullscreenmenu .menu .sns li{
+    width: 4rem;
+    margin-right: 2.5rem;
+}
+.cp_fullscreenmenu .menu .sns li:nth-of-type(3){
+    width: 4rem;
+    margin: initial;
+}
     .cp_fullscreenmenu .menu ul li,
     .cp_fullscreenmenu .menu ul li a {
     transition: all 0.3s ease;
@@ -244,20 +262,20 @@ header .nav_sp {
     transform: rotate(-45deg);
     background-color: #ffffff;
     }
-    .cp_fullscreenmenu #menuToggle:not(:checked) ~ .menuEffects ul {
+.cp_fullscreenmenu #menuToggle:not(:checked) ~ .menuEffects ul {
     transform: translateY(-30%);
-    }
-    .cp_fullscreenmenu .hamburger {
+}
+.cp_fullscreenmenu .hamburger {
     position: relative;
     top: 0;
     right: 0;
     display: block;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
     cursor: pointer;
     z-index: 100;
-    }
+}
     .cp_fullscreenmenu .hamburger:hover .open:before {
     top: -9px;
     }
@@ -332,12 +350,6 @@ header .nav_sp {
 	top: 0;
 }
 @keyframes album {
-	0% {opacity: 0;}
-	12.5% {opacity: 1;}
-	37.5% {opacity: 1;}
-	50% {opacity: 0;}
-}
-@-webkit-keyframes visual {
 	0% {opacity: 0;}
 	12.5% {opacity: 1;}
 	37.5% {opacity: 1;}
@@ -467,21 +479,39 @@ header .nav_sp {
     background-size: 141px 32px;
     padding-bottom: 3rem;
 }
+#news .texts{
+    text-align: center;
+}
 #news ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
+#news .cnt_img .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color: rgba(0,0,0,0.6);
+	-webkit-transition:	all 0.5s ease;
+	transition:	all 0.6s ease;
+}
+#news .cnt_img:hover .mask {
+	opacity: 1;	/* マスクを表示する */
+}
 #news ul h3{
-    font-size: 2.8rem;
+    font-size: 1.3vw;
     padding-top: 2rem;
     font-weight: lighter;
 }
-#news li :nth-of-type(2){
-    padding-right: 4rem;
-}
 #news p{
-    font-size: 1.5rem;
+    font-size: 1vw;
+    padding-top: 5px;
     text-justify: inter-ideograph;
     font-feature-settings: "palt";
     color: #b3b3b3;
@@ -492,25 +522,10 @@ header .nav_sp {
     overflow: hidden;
     padding: 1rem;
 }
-#news .cnt_img .mask{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;	/* マスクを表示しない */
-	background-color: rgba(0,0,0,0.6);
-	-webkit-transition:	all 0.6s ease;
-	transition:	all 0.6s ease;
-}
 #news .cnt_img .caption {
-	font-size: 3rem;
+	font-size: 2vw;
 	text-align: center;
 	color:#fff;
-}
-#news .cnt_img:hover .mask {
-	opacity: 1;	/* マスクを表示する */
-	padding-top: 20rem;	/* ホバーで下にずらす */
 }
 /** work **/
 #work .work_contents_sp{
@@ -751,18 +766,17 @@ h2{
     margin-bottom: 3rem;
     width: 50%;
 }
-#about h2{
+#about h2 , #work h2{
     background-size: 9rem;
     padding-bottom: 1.2rem;
 }
-#about h2 , #work h2{
-    background-size: 9rem;
-}
 #news h2{
     background-size: 7rem;
+    padding-bottom: 1.2rem;
 }
 #contact h2{
     background-size: 12rem;
+    padding-bottom: 1.2rem;
 }
 p{
     margin:0;
@@ -772,6 +786,7 @@ header{
 }
 header h1{
     width: 20rem;
+    height: 30%;
     margin-left: 3rem;
 }
 header .inner{
@@ -866,12 +881,11 @@ header .logo-img img {
 }
 #about .cnt_column p:nth-of-type(2){
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1vw;
     padding: initial;
 }
 #about dl{
-    font-size: 1rem;
-    font-size: 1rem;
+    font-size: 1vw;
     width: 30rem;
     margin: 0 auto;
 }
