@@ -6,6 +6,8 @@
 <title>Koichiro Azuma</title>
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/index.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- JQueryで読み込み -->
@@ -172,9 +174,23 @@
 <section id="news" class="js-smooth-scroll">
     <h2>NEWS</h2>
     <div class="content">
-        <ul class="column">
-            <!-- 001蔦屋銀座 -->
-            <li class="news1 cnt_column">
+        <ul class="column slider">
+            <!-- 003クマ財団 -->
+            <li class="news3 cnt_column">
+                <div class="cnt_img">
+                    <a href="https://kuma-foundation.org/" target="_blank">
+                        <img src="img/news003.jpg" alt="KUMA FOUNDATION クマ財団">
+                        <div class="mask"></div>
+                    </a>
+                </div>
+                <div class="texts">
+                    <h3>クマ財団 四期生として採用</h3>
+                    <p>若手クリエイターに向けた返済不要の奨学金精度の<br>
+                    クマ財団に四期生として採用されました。</p>
+                </div>
+                </li>
+            <!-- 002蔦屋銀座 -->
+            <li class="news2 cnt_column">
             <div class="cnt_img">
                 <a href="https://store.tsite.jp/ginza/event/magazine/13576-1650160317.html" target="_blank">
                     <img src="img/news001.jpg" alt="GINZA ATRIUM 銀座 蔦屋書店「春のアート展」">
@@ -188,8 +204,8 @@
             </div>
             </li>
 
-            <!-- 002LUMINE -->
-            <li class="news2 cnt_column">
+            <!-- 001LUMINE -->
+            <li class="news1 cnt_column">
             <div class="cnt_img">
                 <a href="https://digitalpr.jp/r/37682" target="_blank">
                     <img src="img/news002.jpg" alt="LUMINE meets ART AWARD 2019-2020 推薦アーティストとして参加">
@@ -204,6 +220,19 @@
                 </p>
             </div>
             </li>
+
+            <!-- 000 ダミー -->
+            <li class="news1 cnt_column">
+                <div class="cnt_img">
+                    <a href="https://digitalpr.jp/r/37682" target="_blank">
+                        <img src="img/news_dami.jpg" alt="comming soon">
+                        <div class="mask"></div>
+                    </a>
+                    </div>
+                <div class="texts">
+                    <h3>ダミーテキスト</h3>
+                </div>
+                </li>
         </ul>
     </div>
 </section>
@@ -581,6 +610,23 @@
         
         import smoothscroll from 'smoothscroll-polyfill';
         smoothscroll.polyfill();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrow: true,
+            prevArrow: '<img src="img/arrow_previous.png" class="prev-arrow">',
+            nextArrow: '<img src="img/arrow_next.png" class="next-arrow">',
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: 850
+
+        });
     </script>
     </div>
 </body>

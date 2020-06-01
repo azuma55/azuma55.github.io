@@ -525,6 +525,11 @@ input {
 	text-align: center;
 	color:#fff;
 }
+.prev-arrow , .next-arrow{
+    position: relative;
+    top: 11rem;
+    width: 2rem;
+}
 /** work **/
 #work .work_contents_sp{
     display: none;
