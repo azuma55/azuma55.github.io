@@ -59,6 +59,8 @@ section {
     padding: 0 12rem;
 }
 .all_container {
+    position: relative;
+    top: 5rem;
     background-color:#000;
     color: #ffffff;
     height: auto;
@@ -745,6 +747,66 @@ input {
     word-wrap: break-word;
     font-feature-settings: "palt";
     color: #b3b3b3;
+}
+#contact form{
+    position: relative;
+    left: 15rem;
+}
+#contact dl{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact dl dt{
+    width: 8rem;
+}
+#contact dl dd{
+    width: 88%;
+    margin-inline-start: 0;
+    padding-bottom: 1rem;
+}
+#contact dt{
+    color: #b3b3b3;
+}
+#contact .g_form{
+    width: 60%;
+    height: 3rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 13px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 8px;
+    border-style: none;
+    background-color: #b3b3b3;
+    color: #000000;
+}
+#contact .g_form_text{
+    width: 60%;
+    height: 18rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 13px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 8px;
+    border-style: none;
+    background-color: #b3b3b3;
+    color: #000000;
+}
+#contact .btbt{
+    position: relative;
+    width: 20%;
+    height: 5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    border-style: none;
+    background-color: #262626;
+    color: #fff;
 }
 footer {
     height: 5.6rem;
