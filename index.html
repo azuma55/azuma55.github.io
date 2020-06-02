@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+    <!-- ※基本共通設定 -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <title>Koichiro Azuma(東弘一郎)Official website</title>
+    <meta property="og:title" content="Koichiro Azuma(東弘一郎)Official website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://koichiro-azuma.com/" />
+    <meta property="og:image" content="https://koichiro-azuma.com/ogp.jpg" />
+    <meta property="og:site_name" content="Koichiro Azuma(東弘一郎)Official website" />
+    <meta property="og:description" content="AZUMA KOICHIRO(東弘一郎)のOfficial Websiteです。" />
+    
+    <!-- Facebook用設定 -->
+    <meta property="fb:app_id" content="App-ID（15文字の半角数字）" />
+    
+    <!-- ※Twitter共通設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Koichiro Azuma</title>
+<meta name="description" content="AZUMA KOICHIRO(東弘一郎)のOfficial Websiteです。主な作品に廻転する不在や他転車など。">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/index.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="img/android-chrome-256x256.png">
 </head>
 <body>
 <!-- JQueryで読み込み -->
@@ -176,7 +194,7 @@
     <div class="content">
         <ul class="column slider">
             <!-- 003クマ財団 -->
-            <li class="news3 cnt_column">
+            <li class="news cnt_column">
                 <div class="cnt_img">
                     <a href="https://kuma-foundation.org/" target="_blank">
                         <img src="img/news003.jpg" alt="KUMA FOUNDATION クマ財団">
@@ -190,22 +208,7 @@
                 </div>
                 </li>
             <!-- 002蔦屋銀座 -->
-            <li class="news2 cnt_column">
-            <div class="cnt_img">
-                <a href="https://store.tsite.jp/ginza/event/magazine/13576-1650160317.html" target="_blank">
-                    <img src="img/news001.jpg" alt="GINZA ATRIUM 銀座 蔦屋書店「春のアート展」">
-                    <div class="mask"></div>
-                </a>
-                </div>
-            <div class="texts">
-                <h3>GINZA ATRIUM<br>
-                銀座 蔦屋書店「春のアート展」</h3>
-                <p>GINZA ATRIUMU 2020年3月20日(金) - 3月30日(月) 10:00-22:30</p>
-            </div>
-            </li>
-
-            <!-- 001LUMINE -->
-            <li class="news1 cnt_column">
+            <li class="news cnt_column">
             <div class="cnt_img">
                 <a href="https://digitalpr.jp/r/37682" target="_blank">
                     <img src="img/news002.jpg" alt="LUMINE meets ART AWARD 2019-2020 推薦アーティストとして参加">
@@ -222,7 +225,7 @@
             </li>
 
             <!-- 000 ダミー -->
-            <li class="news1 cnt_column">
+            <li class="news cnt_column">
                 <div class="cnt_img">
                     <a href="https://digitalpr.jp/r/37682" target="_blank">
                         <img src="img/news_dami.jpg" alt="comming soon">
@@ -622,9 +625,18 @@
             prevArrow: '<img src="img/arrow_previous.png" class="prev-arrow">',
             nextArrow: '<img src="img/arrow_next.png" class="next-arrow">',
             dots: true,
+            dotsClass: 'my-dots',
             slidesToShow: 2,
             slidesToScroll: 2,
-            responsive: 850
+            responsive:[
+                {
+                    breakpoint: 850,
+                    settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    }
+                }
+            ]
 
         });
     </script>

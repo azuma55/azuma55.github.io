@@ -913,7 +913,7 @@ header .logo-img img {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
 }
-#news li{
+#news .news li{
     padding: 0 0 9rem;
     width: 100%;
 }
@@ -926,6 +926,12 @@ header .logo-img img {
 }
 #news p{
     font-size: 1.3rem;
+}
+.prev-arrow{
+    width: 1rem;
+}
+.next-arrow{
+    width: 1rem;
 }
 #work .work_contents{
     display: none;
