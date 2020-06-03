@@ -203,8 +203,8 @@
             <li class="news cnt_column">
                 <div class="cnt_img">
                     <a href="https://kuma-foundation.org/" target="_blank">
-                        <img src="img/news003.jpg" alt="KUMA FOUNDATION クマ財団">
-                        <div class="mask"></div>
+                    <img src="img/news003.jpg" alt="KUMA FOUNDATION クマ財団">
+                    <div class="mask"></div>
                     </a>
                 </div>
                 <div class="texts">
@@ -212,13 +212,13 @@
                     <p>若手クリエイターに向けた返済不要の奨学金精度の<br>
                     クマ財団に四期生として採用されました。</p>
                 </div>
-                </li>
+            </li>
             <!-- 002蔦屋銀座 -->
             <li class="news cnt_column">
                 <div class="cnt_img">
                     <a href="https://store.tsite.jp/ginza/event/magazine/13576-1650160317.html" target="_blank">
-                        <img src="img/news002.jpg" alt="GINZA ATRIUM 銀座 蔦屋書店「春のアート展」">
-                        <div class="mask"></div>
+                    <img src="img/news002.jpg" alt="GINZA ATRIUM 銀座 蔦屋書店「春のアート展」">
+                    <div class="mask"></div>
                     </a>
                     </div>
                 <div class="texts">
@@ -226,24 +226,24 @@
                     銀座 蔦屋書店「春のアート展」</h3>
                     <p>GINZA ATRIUMU 2020年3月20日(金) - 3月30日(月) 10:00-22:30</p>
                 </div>
-                </li>
-    
-                <!-- 001LUMINE -->
-                <li class="news cnt_column">
-                <div class="cnt_img">
-                    <a href="https://digitalpr.jp/r/37682" target="_blank">
-                        <img src="img/news001.jpg" alt="LUMINE meets ART AWARD 2019-2020 推薦アーティストとして参加">
-                        <div class="mask"></div>
-                    </a>
-                    </div>
-                <div class="texts">
-                    <h3>LUMINE meets ART AWARD 2019-2020<br>
-                    推薦アーティストとして参加</h3>
-                    <p>ルミネのアートアワードにて遠山正道氏<br>
-                        推薦作家として選ばれました</p>
-                </div>
-                </li>
+            </li>
+            <!-- 001LUMINE -->
+            <li class="news cnt_column">
+            <div class="cnt_img">
+                <a href="https://digitalpr.jp/r/37682" target="_blank">
+                <img src="img/news001.jpg" alt="LUMINE meets ART AWARD 2019-2020 推薦アーティストとして参加">
+                <div class="mask"></div>
+                </a>
+            </div>
+            <div class="texts">
+                <h3>LUMINE meets ART AWARD 2019-2020<br>
+                推薦アーティストとして参加</h3>
+                <p>ルミネのアートアワードにて遠山正道氏<br>
+                    推薦作家として選ばれました</p>
+            </div>
+            </li>
         </ul>
+        <div class="dots"></div>
     </div>
 </section>
 
@@ -601,23 +601,26 @@
     <section id="contact" class="js-smooth-scroll">
         <h2>CONTACT</h2>
         <div class="content">
-            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScgL0eOlJ6lDpVy6ypN27rS5CT-vOeplfn71TEp3N97xHTiAw/formResponse" target="_self" method="POST" id="mG61Hd">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeM2X9o3VUG4d-aWcrpHFH8hiGaW86VlBD-jG2PVgFHL0IETg/formResponse" target="_self" method="POST" id="mG61Hd">
                 <dl>
                     <dt>Name</dt>
-                    <dd><input name="entry.1673312515" type="text" required="required" id="textfield" class="g_form" placeholder="Name"></dd>
-                    
+                    <dd><input name="entry.1826431607" type="text" required="required" id="textfield" class="g_form" placeholder="Name"></dd>
+
                     <dt><label for="textfield2">Email</label></dt>
-                    <dd><input name="entry.1674796245" type="text" required="required" class="g_form" id="textfield2" placeholder="Email"></dd>
-                    
-                    <dt>Title</dt>
-                    <dd><input name="entry.1301699063" type="text" class="g_form" id="textfield3"placeholder="Email"></dd>
+                    <dd><input name="entry.477463285" type="text" required="required" class="g_form" id="textfield1" placeholder="Email"></dd>
+                    <dt>TEL</dt>
+                    <dd><input name="entry.526476052" type="text" required="required" class="g_form" id="textfield2" placeholder="TEL"></dd>
+
+                    <dt><label for="textfield2">Title</label></dt>
+                    <dd><input name="entry.2112935214" type="text" required="required" class="g_form" id="textfield3" placeholder="Title"></dd>
 
                     <dt>Message</dt>
-                    <dd><textarea name="entry.413911294" required class="g_form_text" id="entry.413911294" placeholder="Message"></textarea></dd>
+                    <dd><textarea name="entry.1058165167" required class="g_form_text" id="entry.1276685215" placeholder="Message"></textarea></dd>
+
+                    <dt>送信</dt>
+                    <dd><input type="submit" class="btbt" value="SEND"></dd>
                 </dl>
-                <input type="submit" class="btbt" value="SEND">
-                  
-              </form>
+            </form>
         </div>
     </section>
 
@@ -645,10 +648,11 @@
             arrow: true,
             prevArrow: '<img src="img/arrow_previous.png" class="prev-arrow">',
             nextArrow: '<img src="img/arrow_next.png" class="next-arrow">',
-            dots: true,
-            dotsClass: 'my-dots',
             slidesToShow: 2,
             slidesToScroll: 2,
+            dots: true,
+            dotsClass: 'slide-dots',
+            appendDots: $('.dots'),
             responsive:[
                 {
                     breakpoint: 850,
