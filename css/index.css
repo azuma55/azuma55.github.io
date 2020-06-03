@@ -218,7 +218,7 @@ input {
 }
 .cp_fullscreenmenu .menu ul li a {
     display: block;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 .cp_fullscreenmenu .menu ul li a:hover {
     color: #ffffff;
@@ -1043,6 +1043,9 @@ header .logo-img img {
     right: 1rem;
     z-index: 2;
 }
+#news button:before{
+    font-size: 1.5rem;
+}
 #work .work_contents{
     display: none;
 }
@@ -1102,7 +1105,7 @@ header .logo-img img {
     max-width: 700px;
 }
 #contact dt{
-    width: 10rem;
+    font-size: 1.3rem;
 }
 #contact dd{
     width: 70rem;
