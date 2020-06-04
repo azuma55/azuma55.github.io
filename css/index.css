@@ -19,13 +19,17 @@ body.fixed {
 html,
 body,
 #main {height:100%;}
+input[type="button"],input[type="text"],input[type="submit"],input[type="image"],textarea{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 h1{
     margin: 0;
 }
 h2 {
     width: 30%;
     border-bottom: 1px solid #fff;
-    margin-bottom: 5.8rem;
+    margin-bottom: 10.8rem;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -51,7 +55,7 @@ ul {
     list-style: none;
 }
 section {
-    margin-bottom:7rem;
+    margin-bottom:24rem;
 }
 .content{
     max-width: 1280px;
@@ -66,8 +70,8 @@ section {
     height: auto;
 }
 #about , #news , #work , #contact{
-    margin-top: -60px;
-    padding-top: 60px;
+    /* margin-top: -60px;
+    padding-top: 60px; */
 }
 header {
     align-items: center;
@@ -314,6 +318,17 @@ input {
     width: 100%;
     height: 100.55vh;
     margin-bottom: 9rem;
+    overflow: hidden;
+}
+.visual:after{
+    content: "";
+    width: 100%;
+    height: 100.55vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 128px 0px rgba(0,0,0,1) inset;
+    z-index: 10;
 }
 .visual .visualimg {
     position   : absolute;
@@ -349,10 +364,20 @@ input {
 	top: 0;
 }
 @keyframes album {
-	0% {opacity: 0;}
-	12.5% {opacity: 1;}
-	37.5% {opacity: 1;}
-	50% {opacity: 0;}
+	0% {
+        transform: scale(1);
+        opacity: 0;
+}
+	12.5% {
+        opacity: 1;
+    }
+	37.5% {
+        opacity: 1;
+    }
+	50% {
+        transform: scale(1.05);
+        opacity: 0;
+    }
 }
 .sp_visual{
     display: none;
@@ -387,7 +412,7 @@ input {
     padding-top: 3rem;
 }
 #about .cnt_column p{
-    font-size: 1vw;
+    /* font-size: 1vw; */
     letter-spacing: 0.1em;
     padding-bottom: 4rem;
 }
@@ -397,7 +422,7 @@ input {
     text-align: left;
     color: #b3b3b3;
     padding-left: 3rem;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     padding-bottom: 0;
 }
 #about .column {
@@ -417,7 +442,7 @@ input {
 }
 #about .exhibition , .award{
     display: block;
-    margin-top: 10rem;
+    margin-top: 11.4rem;
     width: 50%;
     padding-left: 3rem;
 }
@@ -439,7 +464,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     width: 50rem;
 }
 #about dl dt{
@@ -506,12 +531,12 @@ input {
 	opacity: 1;
 }
 #news ul h3{
-    font-size: 1.5vw;
+    font-size: 2.4rem;
     padding-top: 2rem;
     font-weight: lighter;
 }
 #news p{
-    font-size: 1vw;
+    /* font-size: 1vw; */
     padding-top: 5px;
     text-justify: inter-ideograph;
     font-feature-settings: "palt";
@@ -530,8 +555,20 @@ input {
 }
 .prev-arrow , .next-arrow{
     position: relative;
-    top: 7.5vw;
-    width: 1.4vw;
+    top: 0;
+    width: 14rem;
+    background-repeat: no-repeat;
+    background-position: center 9rem;
+    cursor: pointer;
+}
+.prev-arrow:hover , .next-arrow:hover{
+    opacity: 0.5;
+}
+.prev-arrow {
+    background-image: url(../img/arrow_previous.png);
+}
+.next-arrow {
+    background-image: url(../img/arrow_next.png);
 }
 #news button{
     position: relative;
@@ -783,12 +820,12 @@ input {
     flex-wrap: wrap;
 }
 #contact dt{
-    width: 9rem;
+    width: 16%;
     font-size: 1.2vw;
     color: #b3b3b3;
 }
 #contact dd{
-    width: 68rem;
+    width: 84%;
     margin-inline-start: 0;
     padding-bottom: 2rem;
 }
@@ -819,7 +856,7 @@ input {
     padding: 13px;
     box-sizing: border-box;
     display: block;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     border-style: none;
     background-color: #b3b3b3;
     color: #000000;
@@ -872,7 +909,7 @@ h2{
     padding-bottom: 1.2rem;
 }
 #contact h2{
-    background-size: 12rem;
+    background-size: 9rem;
     padding-bottom: 1.2rem;
 }
 p{
@@ -985,7 +1022,7 @@ header .logo-img img {
     padding: initial;
 }
 #about dl{
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 30rem;
     margin: 0 auto;
 }
@@ -1010,6 +1047,9 @@ header .logo-img img {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
 }
+#news .cnt_column {
+    padding: 0;
+}
 #news .news li{
     padding: 0 0 9rem;
     width: 100%;
@@ -1027,21 +1067,20 @@ header .logo-img img {
 #news .slider{
     margin:initial
 }
-#news .prev-arrow{
-    position: absolute;
-    width: 4vw;
-    height: 14vw;
-    top: 24vw;
-    left: 1rem;
-    z-index: 2;
-}
+#news .prev-arrow ,
 #news .next-arrow{
     position: absolute;
-    width: 4vw;
-    height: 14vw;
-    top: 24vw;
-    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    height: 22rem;
+    background-size: 1.4rem;
     z-index: 2;
+}
+#news .prev-arrow {
+    left: 0;
+}
+#news .next-arrow {
+    right: 0;
 }
 #news button:before{
     font-size: 1.5rem;
@@ -1050,6 +1089,7 @@ header .logo-img img {
     display: none;
 }
 #work .work_contents_sp{
+    position: relative;
     padding-bottom: 3rem;
     display: block;
 }
@@ -1073,7 +1113,11 @@ header .logo-img img {
 }
 
 #work figure p{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
 }
 #work .button-link > .modal-close-top{
     position: absolute;
@@ -1102,9 +1146,10 @@ header .logo-img img {
     font-size: 2rem;
 }
 #contact .content{
-    max-width: 700px;
+    width: 86%;
 }
 #contact dt{
+    margin-bottom: 0.3rem;
     font-size: 1.3rem;
 }
 #contact dd{
