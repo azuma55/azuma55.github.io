@@ -29,7 +29,7 @@ h1{
 h2 {
     width: 30%;
     border-bottom: 1px solid #fff;
-    margin-bottom: 10.8rem;
+    margin-bottom: 8rem;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -55,7 +55,7 @@ ul {
     list-style: none;
 }
 section {
-    margin-bottom:24rem;
+    margin-bottom:14rem;
 }
 .content{
     max-width: 1280px;
@@ -68,10 +68,6 @@ section {
     background-color:#000;
     color: #ffffff;
     height: auto;
-}
-#about , #news , #work , #contact{
-    /* margin-top: -60px;
-    padding-top: 60px; */
 }
 header {
     align-items: center;
@@ -364,7 +360,7 @@ input {
 	top: 0;
 }
 @keyframes album {
-	0% {
+    0% {
         transform: scale(1);
         opacity: 0;
 }
@@ -389,7 +385,7 @@ input {
 #about h2{
     background: url(../img/h2_about.svg) no-repeat;
     background-position-x: 3.5rem;
-    background-size: 118px 41px;
+    background-size: 15rem;
     padding-bottom: 3.5rem;
 }
 #about .column .cnt_column h2{
@@ -412,7 +408,6 @@ input {
     padding-top: 3rem;
 }
 #about .cnt_column p{
-    /* font-size: 1vw; */
     letter-spacing: 0.1em;
     padding-bottom: 4rem;
 }
@@ -422,7 +417,6 @@ input {
     text-align: left;
     color: #b3b3b3;
     padding-left: 3rem;
-    /* font-size: 1vw; */
     padding-bottom: 0;
 }
 #about .column {
@@ -442,21 +436,21 @@ input {
 }
 #about .exhibition , .award{
     display: block;
-    margin-top: 11.4rem;
+    margin-top: 10rem;
     width: 50%;
     padding-left: 3rem;
 }
 #about .exhibition h3{
     display: block;
     padding-bottom: 1.5rem;
-    background-image: url(../img/exhibition.svg);
-    background-size: 100%;
+    background-image: url(../img/h3_exhibi.svg);
+    background-size: 12rem;
     background-repeat: no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     border-bottom: 1px solid #fff;
-    width: 25%;
+    width: 12rem;
     margin: 0 auto;
 }
 #about dl{
@@ -464,11 +458,12 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    /* font-size: 1vw; */
     width: 50rem;
 }
 #about dl dt{
     width: 14%;
+    color: #d8d8d8;
+
 }
 #about dl dd{
     width: 86%;
@@ -489,20 +484,20 @@ input {
 #about .award h3{
     display: block;
     padding-bottom: 1rem;
-    background-image: url(../img/award.svg);
-    background-size: 100%;
+    background-image: url(../img/h3_award.svg);
+    background-size: 12rem;
     background-repeat: no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
     border-bottom: 1px solid #fff;
-    width: 16%;
+    width: 12rem;
     margin: 0 auto;
 }
 #news h2{
     background: url(../img/h2_news.svg) no-repeat;
     background-position-x: 3.5rem;
-    background-size: 100px 41px;
+    background-size: 15rem;
     padding-bottom: 3rem;
 }
 #news .texts{
@@ -531,12 +526,12 @@ input {
 	opacity: 1;
 }
 #news ul h3{
-    font-size: 2.4rem;
+    font-size: 1.5vw;
     padding-top: 2rem;
     font-weight: lighter;
 }
 #news p{
-    /* font-size: 1vw; */
+    font-size: 1vw;
     padding-top: 5px;
     text-justify: inter-ideograph;
     font-feature-settings: "palt";
@@ -566,9 +561,12 @@ input {
 }
 .prev-arrow {
     background-image: url(../img/arrow_previous.png);
+    background-size: 2rem;
 }
 .next-arrow {
     background-image: url(../img/arrow_next.png);
+    background-size: 2rem;
+
 }
 #news button{
     position: relative;
@@ -613,7 +611,7 @@ input {
 #work h2{
     background: url(../img/h2_work.svg) no-repeat;
     background-position-x: 3.5rem;
-    background-size: 100px 41px;
+    background-size: 15rem;
     padding-bottom: 3rem;
 }
 #work .contents{
@@ -638,7 +636,7 @@ input {
     font-size: 3rem;
     text-align: left;
     font-weight: lighter;
-    padding: 1rem 0 0 3.5rem;
+    padding: 4rem 0 0 3.5rem;
 }
 #work h4{
     font-size: 1.3rem;
@@ -700,7 +698,7 @@ input {
     padding-top: 3rem;
 }
 #work .work_contents:hover .mask {
-	opacity: 1;	/* マスクを表示する */
+	opacity: 1;
 }
 .modal-content {
     width: 60%;
@@ -728,7 +726,7 @@ input {
     top: 8rem;
 }
 .modal-content .contaier{
-    padding: 2rem 3rem 7rem;
+    padding: 2rem 3rem 10rem;
 }
 .modal-content img{
     width: 100%;
@@ -739,7 +737,7 @@ input {
     line-height: 2;
     text-align: justify;
     text-justify: inter-ideograph;
-    /* -ms-text-justify: inter-ideograph; */
+    -ms-text-justify: inter-ideograph;
     word-break: normal;
     word-wrap: break-word;
     font-feature-settings: "palt";
@@ -809,23 +807,23 @@ input {
 #contact h2{
     background: url(../img/h2_contact.svg) no-repeat;
     background-position-x: 3.5rem;
-    background-size: 150px 30px;
+    background-size: 15rem;
     padding-bottom: 3rem;
 }
 #contact .content{
-    max-width: 1018px;
+    max-width: 1020px;
 }
 #contact dl{
     display: flex;
     flex-wrap: wrap;
 }
 #contact dt{
-    width: 16%;
+    width: 12rem;
     font-size: 1.2vw;
     color: #b3b3b3;
 }
 #contact dd{
-    width: 84%;
+    width: 66rem;
     margin-inline-start: 0;
     padding-bottom: 2rem;
 }
@@ -846,7 +844,6 @@ input {
     display: block;
     border-style: none;
     background-color: #b3b3b3;
-    color: #000000;
 }
 #contact .g_form_text{
     width: 100%;
@@ -856,7 +853,6 @@ input {
     padding: 13px;
     box-sizing: border-box;
     display: block;
-    /* margin-top: 8px; */
     border-style: none;
     background-color: #b3b3b3;
     color: #000000;
@@ -899,18 +895,6 @@ h2{
     font-size: 2rem;
     margin-bottom: 3rem;
     width: 50%;
-}
-#about h2 , #work h2{
-    background-size: 9rem;
-    padding-bottom: 1.2rem;
-}
-#news h2{
-    background-size: 7rem;
-    padding-bottom: 1.2rem;
-}
-#contact h2{
-    background-size: 9rem;
-    padding-bottom: 1.2rem;
 }
 p{
     margin:0;
@@ -984,7 +968,7 @@ header .logo-img img {
     margin-top: -30rem;
 }
 .content{
-    padding: 0;
+    padding: inherit;
 }
 .column {
     -webkit-box-orient: vertical;
@@ -997,6 +981,12 @@ header .logo-img img {
 }
 .column .cnt_img img {
     height: 100%;
+}
+#about h2{
+    background-image: url(../img/sp_h2_about.svg);
+    background-position-x: 2rem;
+    background-size: 12rem;
+    padding-bottom: 1rem;
 }
 #about .content{
     padding:inherit;
@@ -1016,14 +1006,26 @@ header .logo-img img {
     font-size: 1.5rem;
     line-height: 1;
 }
+#about .exhibition h3{
+    background-image: url(../img/sp_h3_exhibi.svg);
+    background-size: 10rem;
+    width: 10rem;
+    padding-bottom: 5px;
+}
+#about .award h3{
+    background-image: url(../img/sp_h3_award.svg);
+    background-size: 10rem;
+    width: 10rem;
+    padding-bottom: 5px;
+}
 #about .cnt_column p:nth-of-type(2){
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: initial;
 }
 #about dl{
     font-size: 1.1rem;
-    width: 30rem;
+    width: 34em;
     margin: 0 auto;
 }
 #about dl dd{
@@ -1047,8 +1049,11 @@ header .logo-img img {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
 }
-#news .cnt_column {
-    padding: 0;
+#news h2{
+    background-image: url(../img/sp_h2_news.svg);
+    background-position-x: 2rem;
+    background-size: 12rem;
+    padding-bottom: 1rem;
 }
 #news .news li{
     padding: 0 0 9rem;
@@ -1070,10 +1075,11 @@ header .logo-img img {
 #news .prev-arrow ,
 #news .next-arrow{
     position: absolute;
-    top: 1rem;
     width: 4rem;
-    height: 22rem;
-    background-size: 1.4rem;
+    height: 15rem;
+    background-size: 3rem;
+    margin: 16rem 0;
+    background-position: center;
     z-index: 2;
 }
 #news .prev-arrow {
@@ -1085,6 +1091,12 @@ header .logo-img img {
 #news button:before{
     font-size: 1.5rem;
 }
+#work h2{
+    background-image: url(../img/sp_h2_work.svg);
+    background-position-x: 2rem;
+    background-size: 12rem;
+    padding-bottom: 1rem;
+}
 #work .work_contents{
     display: none;
 }
@@ -1094,7 +1106,7 @@ header .logo-img img {
     display: block;
 }
 #work h3{
-    padding: 2rem 0 0 3.5rem;
+    padding: 5rem 0 0 3.5rem;
     font-size: 2rem;
 }
 #work h4{
@@ -1114,10 +1126,6 @@ header .logo-img img {
 
 #work figure p{
     font-size: 1rem;
-    position: absolute;
-    bottom: 3rem;
-    color: #fff;
-    text-shadow: 0px 0px 10px #000;
 }
 #work .button-link > .modal-close-top{
     position: absolute;
@@ -1127,14 +1135,14 @@ header .logo-img img {
     height: 3rem;
 }
 #work .button-link > .modal-close-bottom{
-    background-size:8rem; 
+    background-size:8rem;
     padding: initial;
     width: 84px;
     height: 20px;
 }
 .modal-content {
     width: 100%;
-    padding: 6rem 0;
+    padding:  2rem 0 7rem;
 }
 .modal-content .contaier{
     padding: 2rem 2rem 0;
@@ -1145,21 +1153,35 @@ header .logo-img img {
 #modal-content-01 h2{
     font-size: 2rem;
 }
+#contact h2{
+    background-image: url(../img/sp_h2_contact.svg);
+    background-position-x: 2rem;
+    background-size: 12rem;
+    padding-bottom: 1rem;
+}
 #contact .content{
-    width: 86%;
+    max-width: 86%;
 }
 #contact dt{
-    margin-bottom: 0.3rem;
     font-size: 1.3rem;
+    padding-bottom: 0.5rem;
 }
 #contact dd{
     width: 70rem;
 }
-#contact dd:nth-of-type(6){
-    width: 100%;
+#contact input ,textarea{
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 #contact .btbt{
     width: 100%;
     height: 6rem;
+}
+#contact dt:nth-of-type(6){
+    padding: inherit;
+}
+#contact dd:nth-of-type(6){
+    width: 100%;
+    padding: inherit;
 }
 }

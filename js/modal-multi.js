@@ -70,18 +70,26 @@ for(var i=0,l=modals.length; l>i; i++){
 
 		//コンテンツをフェードインする
 		$( nowModalSyncer ).fadeIn( "slow" ) ;
+
 		//[#modal-overlay]、または[.button-link]をクリックしたら…
 		$( "#modal-overlay,.button-link" ).off('click').on('click.close-modal',function() {
 			$('body').removeClass('fixed');//背景固定を解除
+
 			//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
 			$( "#" + target + ",#modal-overlay" ).fadeOut( "fast" , function() {
+
 				//[#modal-overlay]を削除する
 				$( '#modal-overlay' ).remove() ;
+
 			} ) ;
+
 			//現在のコンテンツ情報を削除
 			nowModalSyncer = null ;
+
 		} ) ;
+
 	}
+
 }
 
 	//リサイズされたら、センタリングをする関数[centeringModalSyncer()]を実行する
