@@ -1169,13 +1169,19 @@ header .logo-img img {
 #contact dd{
     width: 70rem;
 }
+#contact .g-form{
+    height: 3rem;
+    padding: 12rem;
+}
 #contact input ,textarea{
     -webkit-appearance: none;
     border-radius: 0;
 }
 #contact .btbt{
     width: 100%;
-    height: 6rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
 }
 #contact dt:nth-of-type(6){
     padding: inherit;
