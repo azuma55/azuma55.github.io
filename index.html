@@ -362,7 +362,7 @@
             <!-- 英語タイトル -->
                 <h4>TA-TEN-SHA</h4>
                 <div class="contaier">
-                    <img src="img/modal05_01.jpg"　alt="他転車">
+                    <img src="img/modal05_01.jpg" alt="他転車">
                     <img src="img/modal05_02.jpg" alt="他転車">
                     <p>《他転車》は自転車がモーターによって物理的に回転する装置です。<br>
                     自転車の歴史を調べてみると、かつて自在車や自輪車と呼ばれていた装置だということがわかります。<br>
@@ -650,6 +650,22 @@
         <small>&copy; 2020 Koichiro Azuma.</small>
     </footer>
     <!-- スクリプト -->
+    <script>
+        import smoothscroll from "smoothscroll-polyfill";
+
+        document.addEventListener("click", e => {
+
+          const target = e.target;
+          // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+          if (!target.classList.contains("js-smooth-scroll")) return;
+          e.preventDefault();
+          const targetId = target.hash;
+          document.querySelector(targetId).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        });
+          </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="text/javascript"></script>
