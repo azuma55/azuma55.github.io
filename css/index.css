@@ -137,6 +137,8 @@ header h1 {
   background-image: url(../img/logo01.png);
   background-repeat: no-repeat;
   background-size: 85%;
+  width: 24rem;
+  height: 2rem;
   margin-left: 37px;
   overflow: hidden;
   text-indent: 100%;
