@@ -1,0 +1,134 @@
+#news {
+    h2 {
+      background: url(../img/h2_news.svg) no-repeat;
+      background-position-x: 3.5rem;
+      background-size: 15rem;
+      padding-bottom: 3rem;
+    }
+  
+    .texts {
+      text-align: center;
+    }
+  
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .cnt_img {
+      .mask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.6s ease;
+      }
+  
+      &:hover .mask {
+        opacity: 1;
+      }
+    }
+  
+    ul h3 {
+      font-size: 1.5vw;
+      padding-top: 2rem;
+      font-weight: lighter;
+    }
+  
+    p {
+      font-size: 1vw;
+      padding-top: 5px;
+      text-justify: inter-ideograph;
+      font-feature-settings: "palt";
+      color: #b3b3b3;
+      text-align: center;
+    }
+  
+    .cnt_column {
+      position: relative;
+      overflow: hidden;
+      padding: 1rem;
+    }
+  
+    .cnt_img .caption {
+      font-size: 2vw;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  
+  .prev-arrow, .next-arrow {
+    position: relative;
+    top: 0;
+    width: 14rem;
+    background-repeat: no-repeat;
+    background-position: center 9rem;
+    cursor: pointer;
+  }
+  
+  .prev-arrow:hover, .next-arrow:hover {
+    opacity: 0.5;
+  }
+  
+  .prev-arrow {
+    background-image: url(../img/arrow_previous.png);
+    background-size: 2rem;
+  }
+  
+  .next-arrow {
+    background-image: url(../img/arrow_next.png);
+    background-size: 2rem;
+  }
+  
+  #news {
+    button {
+      position: relative;
+      text-indent: -9999px;
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  
+      &:before {
+        position: absolute;
+        content: '○';
+        font-size: 1.7rem;
+        text-indent: 0px;
+        top: 0;
+        left: 0;
+      }
+    }
+  
+    .slick-dotted {
+      margin: 0;
+    }
+  
+    .slick-active button:before {
+      content: '●';
+    }
+  
+    .dots {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .slide-dots li {
+      display: inline-block;
+      padding: 0 2rem;
+    }
+  }
+  

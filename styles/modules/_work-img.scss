@@ -1,0 +1,245 @@
+#work {
+    .work_contents_sp {
+      display: none;
+    }
+  
+    h2 {
+      background: url(../img/h2_work.svg) no-repeat;
+      background-position-x: 3.5rem;
+      background-size: 15rem;
+      padding-bottom: 3rem;
+    }
+  
+    .contents {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .column {
+      justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .work_contents {
+      flex: 0 0 30%;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 3rem;
+    }
+  }
+  
+  .modal-content p:nth-of-type(2) {
+    padding-bottom: 2rem;
+  }
+  
+  #work {
+    h3 {
+      font-size: 3rem;
+      text-align: left;
+      font-weight: lighter;
+      padding: 4rem 0 0 3.5rem;
+    }
+  
+    h4 {
+      font-size: 1.3rem;
+      width: 50%;
+      border-bottom: 1px solid #000000;
+      margin-bottom: 3rem;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0 0 2rem 3.8rem;
+    }
+  
+    .modal-syncer img {
+      width: 51.682vh;
+    }
+  
+    .work_contents {
+      .pc {
+        display: block;
+      }
+  
+      .sp {
+        display: none;
+      }
+    }
+  }
+  
+  .icon {
+    display: inline;
+  
+    ul li {
+      display: inline;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  #work {
+    .mask {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+  
+      background-color: rgba(0, 0, 0, 0.6);
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+    }
+  
+    .work_contents {
+      .caption {
+        color: #fff;
+        position: relative;
+        text-align: center;
+        width: 15vw;
+        height: 7vw;
+  
+        h5 {
+          font-size: 1.8vw;
+          font-weight: lighter;
+        }
+  
+        p {
+          font-size: 1.2vw;
+          padding-top: 1rem;
+          font-weight: lighter;
+  
+          &:nth-of-type(2) {
+            font-size: 2rem;
+            padding-top: 3rem;
+          }
+        }
+      }
+  
+      &:hover .mask {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .modal-content {
+    width: 60%;
+    margin: 0;
+    font-size: 4.8vw;
+    color: #000000;
+    background: #fff;
+    position: fixed;
+    display: none;
+    z-index: 20;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: calc(100vh - 1.5rem);
+  
+    h2 {
+      position: relative;
+      z-index: 22;
+      top: 8rem;
+    }
+  
+    .title_en {
+      display: block;
+      padding-bottom: 2rem;
+      position: relative;
+      z-index: 21;
+      top: 8rem;
+    }
+  
+    .contaier {
+      padding: 2rem 3rem 10rem;
+    }
+  
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      font-size: 1.3rem;
+      line-height: 2;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      -ms-text-justify: inter-ideograph;
+      word-break: normal;
+      word-wrap: break-word;
+      font-feature-settings: "palt";
+      padding-bottom: 2rem;
+    }
+  }
+  
+  #modal-overlay {
+    z-index: 19;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal_youtube {
+    margin-bottom: 3rem;
+  }
+  
+  #work {
+    .button-link > .modal-close-top {
+      position: relative;
+      z-index: 21;
+      background-image: url(../img/close_top.gif);
+      background-repeat: no-repeat;
+      background-size: 2rem;
+      width: 22px;
+      height: 22px;
+      margin: 3rem 4rem 0 auto;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  
+    .modal-close-top:hover {
+      background-image: url(../img/close_top_hover.gif);
+    }
+  
+    .button-link > .modal-close-bottom {
+      width: 124px;
+      height: 28px;
+      background-size: 12rem;
+      background-image: url(../img/close_bottom.gif);
+      background-repeat: no-repeat;
+      overflow: hidden;
+      text-indent: 100%;
+      max-width: 50%;
+      margin: 0 auto;
+      white-space: nowrap;
+      position: relative;
+      cursor: pointer;
+    }
+  
+    .modal-close-bottom:hover {
+      background-image: url(../img/close_bottom_hover.gif);
+    }
+  }
+  
+  .movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+  
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
