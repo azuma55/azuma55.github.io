@@ -1,13 +1,14 @@
 #contact {
     h2 {
       background: url(../img/h2_contact.svg) no-repeat;
-      background-position-x: 3.5rem;
-      background-size: 15rem;
-      padding-bottom: 3rem;
+      background-repeat: no-repeat;
+      background-position-x: 2rem;
+      background-size: 12rem;
+      padding-bottom: 1rem;
     }
   
     .content {
-      max-width: 1020px;
+      max-width: 86%;
     }
   
     dl {
@@ -17,35 +18,35 @@
   
     dt {
       width: 12rem;
-      font-size: 1.2vw;
+      font-size: 1.3rem;
       color: #b3b3b3;
+      padding-bottom: 0.5rem;
     }
   
     dd {
-      width: 66rem;
+      width: 70rem;
       margin-inline-start: 0;
       padding-bottom: 2rem;
     }
-  
-    dt:nth-of-type(6) {
+
+    dt:nth-of-type(6){
       text-indent: -9999px;
-      width: 57rem;
     }
-  
+
     dd:nth-of-type(6) {
-      width: 14rem;
+      width: 100%;
     }
   
     .g_form {
       width: 100%;
-      height: 4rem;
+      height: 3rem;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      padding: 13px;
       box-sizing: border-box;
       display: block;
       border-style: none;
       background-color: #b3b3b3;
+      padding: 12px;
     }
   
     .g_form_text {
@@ -60,18 +61,26 @@
       background-color: #b3b3b3;
       color: #000000;
     }
-  
+    .input{
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+    textarea {
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+
     .btbt {
       position: relative;
-      width: 20rem;
-      height: 5.8rem;
+      width: 100%;
+      height: 5rem;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       display: block;
       border-style: none;
-      font-size: 2.7rem;
-      letter-spacing: 0.2em;
+      font-size: 1.8rem;
+      letter-spacing: 0.1em;
       background-color: #262626;
       color: #fff;
   

@@ -5,12 +5,10 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'DIN Alternate',YuGothic,'Yu Gothic','Arial',sans-serif;
-  font-size: 1.6rem;
   background: $cBlack;
   color: $clightgray;
 
@@ -40,9 +38,9 @@ h1 {
 }
 
 h2 {
-  width: 30%;
+  width: 50%;
   border-bottom: 1px solid #ffffff;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -52,10 +50,25 @@ h2 {
 h3 {
   margin: 0;
   text-align: center;
+  font-weight: lighter;
 }
 
 h4, h5, p {
   margin: 0;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 1.3rem;
+  width: 50%;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 0 2rem 3.8rem;
 }
 
 img {
@@ -71,6 +84,7 @@ ul {
   padding: 0;
   list-style: none;
 }
+
 input {
   &[type="button"], &[type="text"], &[type="submit"], &[type="image"] {
     -webkit-appearance: none;
@@ -84,7 +98,7 @@ textarea {
 }
 
 section {
-  margin-bottom: 14rem;
+  margin-bottom: 7rem;
 }
 
 .content {
@@ -101,6 +115,25 @@ section {
   height: auto;
 }
 
+.content {
+  padding: inherit;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.column .cnt_img {
+  width: 100%;
+}
+
+.column .cnt_img img {
+  height: 100%;
+}
+
 header {
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
@@ -109,13 +142,16 @@ header {
   height: 5rem;
   z-index: 18;
 
+  .nav-global {
+    display: none;
+  }
+
   .inner {
     display: flex;
     height: inherit;
   }
 
   .flexbox {
-    margin-right: auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -130,61 +166,17 @@ header {
 }
 
 header h1 {
-  height: 40%;
+  height: 30%;
   background-image: url(../img/logo01.png);
   background-repeat: no-repeat;
   background-size: 85%;
-  margin-left: 37px;
+  margin-left: 3.7rem;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
+  width: 25rem;
+  height: 2rem;
 }
-
-.nav-global {
-  display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
-  margin-right: 58px;
-
-  li {
-    margin-right: 54px;
-    font-size: 1.5rem;
-  }
-
-  a {
-    position: relative;
-    display: inline-block;
-    color: $cWhite;
-    text-decoration: none;
-  }
-
-  .flexbox a {
-    &:hover {
-      color: $cWhite;
-    }
-
-    &::after {
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background: $cWhite;
-      transform: scale(0, 1);
-      transform-origin: right top;
-      transition: transform 0.1 0.5s;
-    }
-
-    &:hover::after {
-      transform-origin: left top;
-      transform: scale(1, 1);
-    }
-  }
-
-  img {
-    width: 80%;
-  }
 
   .sns li {
     margin-right: 1rem;
@@ -193,11 +185,6 @@ header h1 {
       margin: 0;
     }
   }
-}
-
-header .nav_sp {
-  display: none;
-}
 
 #nav-drawer {
   position: relative;
@@ -206,10 +193,9 @@ header .nav_sp {
 footer {
   margin: 7rem auto;
   width: 16rem;
-  height: 5.6rem;
 
   small {
     font-size: 1.5rem;
-    color: #b3b3b3;
+    color: $clightgray;
   }
 }

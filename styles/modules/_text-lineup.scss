@@ -1,63 +1,63 @@
 #about {
+    h2 {
+      background-image: url(../img/sp_h2_about.svg);
+      background-repeat: no-repeat;
+      background-position-x: 2rem;
+      background-size: 12rem;
+      padding-bottom: 1rem;
+    }
     .content {
       height: 100%;
-      padding: 0 12rem 0 8rem;
     }
-  
-    h2 {
-      background: url(../img/h2_about.svg) no-repeat;
-      background-position-x: 3.5rem;
-      background-size: 15rem;
-      padding-bottom: 3.5rem;
-    }
-  
-    .column .cnt_column {
-      h2 {
-        text-align: center;
-        padding: 1rem 0 0 0;
-        font-size: 3.5rem;
-        font-weight: lighter;
-      }
-  
-      width: 50%;
-      height: 50%;
-      text-align: center;
-    }
-  
-    .cnt_column {
-      h3 {
-        display: block;
-        text-align: center;
-        font-size: 2vw;
-        font-weight: lighter;
-        letter-spacing: 0.1em;
-        padding-top: 3rem;
-      }
-  
-      p {
-        letter-spacing: 0.1em;
-        padding-bottom: 4rem;
-  
-        &:nth-of-type(2) {
-          line-height: 1.9;
-          letter-spacing: normal;
-          text-align: left;
-          color: #b3b3b3;
-          padding-left: 3rem;
-          padding-bottom: 0;
-        }
-      }
-    }
-  
     .column {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-direction: column-reverse;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
     }
-  
+    .column .column_reverse {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+    }
+    .cnt_column {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 6rem;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: lighter;
+      letter-spacing: 0.1em;
+      padding-top: 3rem 0 0 3.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      padding-bottom: 4rem;
+      &:nth-of-type(2) {
+        display: inline-block;
+        font-size: 1.1rem;
+        line-height: 1.9;
+        letter-spacing: normal;
+        text-align: left;
+        color: #b3b3b3;
+        padding-bottom: 0;
+      }
+    }
+    .exhibition , .award {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 0 2rem 6rem;
+    }
     .colum h3 {
       border-bottom: 1px solid #fff;
       width: 32%;
@@ -65,43 +65,44 @@
       text-indent: 100%;
       white-space: nowrap;
     }
-  
-    .exhibition {
-      display: block;
-      margin-top: 10rem;
-      width: 50%;
-      padding-left: 3rem;
-    }
-  }
-  
-  .award {
-    display: block;
-    margin-top: 10rem;
-    width: 50%;
-    padding-left: 3rem;
-  }
-  
-  #about {
     .exhibition h3 {
       display: block;
-      padding-bottom: 1.5rem;
-      background-image: url(../img/h3_exhibi.svg);
-      background-size: 12rem;
+      padding-bottom: 5px;
+      background-image: url(../img/sp_h3_exhibi.svg);
+      background-size: 10rem;
       background-repeat: no-repeat;
       overflow: hidden;
       text-indent: 100%;
       white-space: nowrap;
       border-bottom: 1px solid #fff;
-      width: 12rem;
+      width: 10rem;
       margin: 0 auto;
     }
-  
+    .award{
+      padding: 0 2rem 6rem;
+    }
+    .award h3 {
+      display: block;
+      padding-bottom: 5px;
+      background-image: url(../img/sp_h3_award.svg);
+      background-size: 10rem;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      border-bottom: 1px solid #fff;
+      width: 10rem;
+      margin: 0 auto;
+    }
     dl {
       padding-top: 1.8rem;
       display: flex;
+      font-size: 1.1rem;
+      width: 34em;
       flex-wrap: wrap;
       align-items: baseline;
-      width: 50rem;
+      width: 34rem;
+      margin: 0 auto;
   
       dt {
         width: 14%;
@@ -112,6 +113,7 @@
         width: 86%;
         margin-inline-start: 0;
         padding-bottom: 8px;
+        text-align: left;
       }
     }
   
@@ -127,19 +129,5 @@
   
     .list {
       height: 5rem;
-    }
-  
-    .award h3 {
-      display: block;
-      padding-bottom: 1rem;
-      background-image: url(../img/h3_award.svg);
-      background-size: 12rem;
-      background-repeat: no-repeat;
-      overflow: hidden;
-      text-indent: 100%;
-      white-space: nowrap;
-      border-bottom: 1px solid #fff;
-      width: 12rem;
-      margin: 0 auto;
     }
   }
