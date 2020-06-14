@@ -5,12 +5,20 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'DIN Alternate',YuGothic,'Yu Gothic','Arial',sans-serif;
   background: $cBlack;
   color: $clightgray;
+  font-family: 'DIN Alternate',YuGothic,'Yu Gothic','Arial',sans-serif;
+  overflow-x: hidden;
 
   &.fixed {
     width: 100%;
@@ -18,15 +26,27 @@ body {
     left: 0;
     overflow: hidden;
   }
+
+  /** modal-multi.jsとリンク **/
+  #modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 19;
+  }
 }
 
 img {
-  vertical-align: baseline;
   width: 100%;
-  max-width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  vertical-align: baseline;
+
 }
 
 html, body, #main {
@@ -39,12 +59,12 @@ h1 {
 
 h2 {
   width: 50%;
-  border-bottom: 1px solid #ffffff;
   margin-bottom: 3rem;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
   padding-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
 }
 
 h3 {
@@ -57,27 +77,22 @@ h4, h5, p {
   margin: 0;
 }
 
+h5{
+  font-weight: lighter;
+}
+
 p{
   font-size: 1rem;
 }
 
 h4{
-  font-size: 1.3rem;
   width: 50%;
-  border-bottom: 1px solid #000000;
   margin-bottom: 3rem;
+  padding: 0 0 2rem 3.8rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #000;
   overflow: hidden;
   white-space: nowrap;
-  padding: 0 0 2rem 3.8rem;
-}
-
-img {
-  vertical-align: baseline;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 ul {
@@ -126,25 +141,13 @@ section {
   flex-direction: column;
 }
 
-.column .cnt_img {
-  width: 100%;
-}
-
-.column .cnt_img img {
-  height: 100%;
-}
-
 header {
-  align-items: center;
-  background: rgba(0, 0, 0, 0.7);
   position: fixed;
+  align-items: center;
   width: 100%;
   height: 5rem;
+  background: rgba(0, 0, 0, 0.7);
   z-index: 18;
-
-  .nav-global {
-    display: none;
-  }
 
   .inner {
     display: flex;
@@ -152,47 +155,50 @@ header {
   }
 
   .flexbox {
-    align-items: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-}
 
-.sns {
-  margin-right: auto;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
+  h1 {
+    width: 25rem;
+    height: 2rem;
+    margin-left: 3.7rem;
+    background-image: url(../img/logo01.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+  }
 
-header h1 {
-  height: 30%;
-  background-image: url(../img/logo01.png);
-  background-repeat: no-repeat;
-  background-size: 85%;
-  margin-left: 3.7rem;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 25rem;
-  height: 2rem;
-}
+  .nav-global {
+    display: none;
+  }
 
-  .sns li {
-    margin-right: 1rem;
+  .sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
 
-    &:nth-of-type(3) {
-      margin: 0;
+    li {
+      margin-right: 2rem;
+
+      &:nth-of-type(3) {
+        margin: 0;
+      }
     }
   }
 
-#nav-drawer {
-  position: relative;
+  #nav-drawer {
+    position: relative;
+  }
 }
 
 footer {
-  margin: 7rem auto;
   width: 16rem;
+  margin: 7rem auto;
 
   small {
     font-size: 1.5rem;

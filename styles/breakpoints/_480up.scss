@@ -1,5 +1,9 @@
-/******************************************************************
-
-Stylesheet: 480px以上(スマホの横向き)のモニタで適用
-
-******************************************************************/
+@media all and (max-width: 480px) {
+#news 
+    .prev-arrow , .next-arrow{
+    width: 4rem;
+    height: 15rem;
+    background-size: 2rem;
+    margin: 5rem 0;
+    }
+}

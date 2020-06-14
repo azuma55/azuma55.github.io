@@ -1,7 +1,7 @@
 $(function() {
     // .on('load resize'～でロードされたときとリサイズされたときに発動 
     $(window).on('load resize', function() {
-      var visual = $('.visual'),
+      var visual = $('.hero'),
         // $(window).height();でウィンドウの縦幅を取得 
         wdHeight = $(window).height();
         wdWidth = $(window).width();

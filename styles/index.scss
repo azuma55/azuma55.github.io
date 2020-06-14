@@ -10,8 +10,14 @@
 
 @import "breakpoints/base";
 
+@media (min-width: 1280px) {
+  @import "breakpoints/_1280up";
+}
 @media (min-width: 849px) {
   @import "breakpoints/850up";
+}
+@media (max-width: 480px) {
+  @import "breakpoints/_480up";
 }
 
 @media print {

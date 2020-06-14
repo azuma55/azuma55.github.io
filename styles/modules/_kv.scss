@@ -1,66 +1,66 @@
-.sp_visual {
-  display: block;
-}
-.visual {
-  display: none;
-}
-.sp_visual {
+.hero{
   position: relative;
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 50vh;
-  margin-bottom: 10rem;
-}
-.sp_visual .visualimg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-animation: bgAnime 12s infinite;
-          animation: bgAnime 12s infinite;
-}
-.sp_visual .src2 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-.sp_visual .src3 {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-@-webkit-keyframes bgAnime {
-  0% {
-    opacity: 0;
+  margin-bottom: 7rem;
+  overflow: hidden;
+
+  .heroimg{
+    position: absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    -webkit-animation: fadein 24s 0s infinite;
+    animation: fadein 24s 0s infinite;
   }
-  4% {
-    opacity: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 1) inset;
+    z-index: 10;
   }
-  25% {
-    opacity: 1;
+
+  @mixin sphero{
+    width: 100%;
+    height: 50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
   }
-  29% {
-    opacity: 1;
+  .src1 {
+    @include sphero;
+    background-image: url(../img/sp_anime01.jpg);
   }
-  100% {
-    opacity: 0;
+  .src2 {
+    @include sphero;
+    background-image: url(../img/sp_anime02.jpg);
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
   }
-}
-@keyframes bgAnime {
-  0% {
-    opacity: 0;
+  .src3 {
+    @include sphero;
+    background-image: url(../img/sp_anime03.jpg);
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
   }
-  4% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  29% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  @-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    12%{opacity: 1;}
+    37%{opacity: 1;}
+    50%{opacity: 0; transform: scale(1.07); z-index:9;}
+ }
+  @keyframes fadein {
+    0% { opacity: 0; }
+    12%{opacity: 1;}
+    37%{opacity: 1;}
+    50%{opacity: 0; transform: scale(1.07); z-index:9;}
+ }
 }
