@@ -1,4 +1,9 @@
 @media all and (max-width: 480px) {
+.hero{
+    .txt1 , .txt2 , .txt3{
+        font-size: 1rem;
+    }
+}
 #news 
     .prev-arrow , .next-arrow{
     width: 4rem;
