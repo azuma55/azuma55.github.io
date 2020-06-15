@@ -573,7 +573,7 @@
   background-size: 2rem;
   width: 22px;
   height: 22px;
-  margin: 3rem 4rem 0 auto;
+  margin: 5rem 4rem 0 auto;
 }
 
 #work .modal-content .modal-close-top:hover {
@@ -617,7 +617,7 @@
 }
 
 #work .modal-content .contaier {
-  padding: 2rem 3rem 10rem;
+  padding: 2rem 3rem 7rem;
 }
 
 #work .modal-content img {
