@@ -29,7 +29,7 @@
   left: 0;
   -webkit-box-shadow: 0px 0px 47px 0px black inset;
           box-shadow: 0px 0px 47px 0px black inset;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero .src1 {
@@ -77,7 +77,7 @@
     opacity: 0;
     -webkit-transform: scale(1.07);
             transform: scale(1.07);
-    z-index: 9;
+    z-index: 3;
   }
 }
 
@@ -95,7 +95,7 @@
     opacity: 0;
     -webkit-transform: scale(1.07);
             transform: scale(1.07);
-    z-index: 9;
+    z-index: 3;
   }
 }
 
@@ -103,25 +103,33 @@
   position: absolute;
   display: inline-block;
   padding: 7px;
-  top: 80%;
-  width: 24%;
+  bottom: 13%;
+  width: 30%;
+  right: 0;
   opacity: 0;
-  z-index: 11;
+  z-index: 4;
+  border-bottom: 1px solid #fff;
   -webkit-animation: txtfade 24s infinite;
   animation: txtfade 24s infinite;
+}
+
+.hero h3 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
 }
 
 .hero .txt1 {
   font-size: 2rem;
   color: #fff;
-  border-bottom: 1px solid #fff;
   text-align: center;
 }
 
 .hero .txt2 {
   font-size: 2rem;
   color: #fff;
-  border-bottom: 1px solid #fff;
   text-align: center;
   -webkit-animation-delay: 8s;
   animation-delay: 8s;
@@ -130,7 +138,6 @@
 .hero .txt3 {
   font-size: 2rem;
   color: #fff;
-  border-bottom: 1px solid #fff;
   text-align: center;
   -webkit-animation-delay: 16s;
   animation-delay: 16s;
@@ -440,7 +447,7 @@
   width: 100%;
 }
 
-#work h2 {
+#work .work_contents h2 {
   background-image: url(../img/sp_h2_work.svg);
   background-repeat: no-repeat;
   background-position-x: 2rem;
@@ -448,7 +455,7 @@
   padding-bottom: 1rem;
 }
 
-#work .image009 {
+#work .work_contents .image01 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -458,7 +465,7 @@
   background-image: url(../img/sp_work01.jpg);
 }
 
-#work .image008 {
+#work .work_contents .image02 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -468,7 +475,7 @@
   background-image: url(../img/sp_work02.jpg);
 }
 
-#work .image007 {
+#work .work_contents .image03 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -478,7 +485,7 @@
   background-image: url(../img/sp_work03.jpg);
 }
 
-#work .image006 {
+#work .work_contents .image04 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -488,7 +495,7 @@
   background-image: url(../img/sp_work04.jpg);
 }
 
-#work .image005 {
+#work .work_contents .image05 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -498,7 +505,7 @@
   background-image: url(../img/sp_work05.jpg);
 }
 
-#work .image004 {
+#work .work_contents .image06 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -508,7 +515,7 @@
   background-image: url(../img/sp_work06.jpg);
 }
 
-#work .image003 {
+#work .work_contents .image07 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -518,7 +525,7 @@
   background-image: url(../img/sp_work07.jpg);
 }
 
-#work .image002 {
+#work .work_contents .image08 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -528,7 +535,7 @@
   background-image: url(../img/sp_work08.jpg);
 }
 
-#work .image001 {
+#work .work_contents .image09 {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 40vw;
@@ -538,11 +545,221 @@
   background-image: url(../img/sp_work09.jpg);
 }
 
-#work .caption {
+#work .work_contents .image10 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work10.jpg);
+}
+
+#work .work_contents .image11 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work11.jpg);
+}
+
+#work .work_contents .image12 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work12.jpg);
+}
+
+#work .work_contents .image13 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work13.jpg);
+}
+
+#work .work_contents .image14 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work14.jpg);
+}
+
+#work .work_contents .image15 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work15.jpg);
+}
+
+#work .work_contents .image16 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work16.jpg);
+}
+
+#work .work_contents .image17 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work17.jpg);
+}
+
+#work .work_contents .image18 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work18.jpg);
+}
+
+#work .work_contents .image19 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work19.jpg);
+}
+
+#work .work_contents .image20 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work20.jpg);
+}
+
+#work .work_contents .image21 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work21.jpg);
+}
+
+#work .work_contents .image22 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work22.jpg);
+}
+
+#work .work_contents .image23 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work23.jpg);
+}
+
+#work .work_contents .image24 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work24.jpg);
+}
+
+#work .work_contents .image25 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work25.jpg);
+}
+
+#work .work_contents .image26 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work26.jpg);
+}
+
+#work .work_contents .image27 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work27.jpg);
+}
+
+#work .work_contents .image28 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work28.jpg);
+}
+
+#work .work_contents .image29 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work29.jpg);
+}
+
+#work .work_contents .image30 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40vw;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(../img/sp_work30.jpg);
+}
+
+#work .work_contents .caption {
   display: none;
 }
 
-#work h6 {
+#work .work_contents h6 {
   margin: 0 0 1.5rem;
   text-align: right;
   font-size: 1.1rem;
@@ -1082,6 +1299,91 @@ section {
   overflow-x: hidden;
 }
 
+.loader-wrap {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #fff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader {
+  color: #fff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
 .content {
   padding: inherit;
 }
@@ -1101,7 +1403,7 @@ header {
   width: 100%;
   height: 5rem;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 18;
+  z-index: 3;
 }
 
 header .inner {
@@ -1183,6 +1485,9 @@ Stylesheet: 1280px以上のモニタで適用
 }
 
 @media all and (min-width: 1280px) and (min-width: 1280px) {
+  .hero .boxString {
+    bottom: 20%;
+  }
   #news .prev-arrow, #news .next-arrow, .next-arrow {
     margin: 9rem 0;
   }
@@ -1444,50 +1749,155 @@ Stylesheet: 1280px以上のモニタで適用
     position: relative;
     width: 35rem;
   }
-  #work .work_contents .image009 {
+  #work .work_contents .image01 {
+    width: 31.2rem;
+    height: 31.2rem;
     background-image: url(../img/work01.jpg);
+  }
+  #work .work_contents .image02 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image008 {
     background-image: url(../img/work02.jpg);
+  }
+  #work .work_contents .image03 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image007 {
     background-image: url(../img/work03.jpg);
+  }
+  #work .work_contents .image04 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image006 {
     background-image: url(../img/work04.jpg);
+  }
+  #work .work_contents .image05 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image005 {
     background-image: url(../img/work05.jpg);
+  }
+  #work .work_contents .image06 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image004 {
     background-image: url(../img/work06.jpg);
+  }
+  #work .work_contents .image07 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image003 {
     background-image: url(../img/work07.jpg);
+  }
+  #work .work_contents .image08 {
     width: 31.2rem;
     height: 31.2rem;
-  }
-  #work .work_contents .image002 {
     background-image: url(../img/work08.jpg);
-    width: 31.2rem;
-    height: 31.2rem;
   }
-  #work .work_contents .image001 {
-    background-image: url(../img/work09.jpg);
+  #work .work_contents .image09 {
     width: 31.2rem;
     height: 31.2rem;
+    background-image: url(../img/work09.jpg);
+  }
+  #work .work_contents .image10 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work10.jpg);
+  }
+  #work .work_contents .image11 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work11.jpg);
+  }
+  #work .work_contents .image12 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work12.jpg);
+  }
+  #work .work_contents .image13 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work13.jpg);
+  }
+  #work .work_contents .image14 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work14.jpg);
+  }
+  #work .work_contents .image15 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work15.jpg);
+  }
+  #work .work_contents .image16 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work16.jpg);
+  }
+  #work .work_contents .image17 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work17.jpg);
+  }
+  #work .work_contents .image18 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work18.jpg);
+  }
+  #work .work_contents .image19 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work19.jpg);
+  }
+  #work .work_contents .image20 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work20.jpg);
+  }
+  #work .work_contents .image21 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work21.jpg);
+  }
+  #work .work_contents .image22 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work22.jpg);
+  }
+  #work .work_contents .image23 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work23.jpg);
+  }
+  #work .work_contents .image24 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work24.jpg);
+  }
+  #work .work_contents .image25 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work25.jpg);
+  }
+  #work .work_contents .image26 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work26.jpg);
+  }
+  #work .work_contents .image27 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work27.jpg);
+  }
+  #work .work_contents .image28 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work28.jpg);
+  }
+  #work .work_contents .image29 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work29.jpg);
+  }
+  #work .work_contents .image30 {
+    width: 31.2rem;
+    height: 31.2rem;
+    background-image: url(../img/work30.jpg);
   }
   #work .work_contents .caption {
     display: block;
@@ -1561,8 +1971,14 @@ Stylesheet: 1280px以上のモニタで適用
 }
 
 @media all and (max-width: 480px) and (max-width: 480px) {
-  .hero .txt1, .hero .txt2, .hero .txt3 {
-    font-size: 1rem;
+  .hero .boxString {
+    width: 45%;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
   }
   #news .prev-arrow, #news .next-arrow, .next-arrow {
     width: 4rem;

@@ -253,42 +253,19 @@ h2 {
   height: 31.2rem;
 }
 
-.image009{
-  background-image: url(../img/work01.jpg);
-  @include pc_work;
+$num: "";
+@for $i from 1 through 30 {
+  @if $i < 10 {
+    $num: "0#{$i}";
+  } @else {
+    $num: $i;
+  }
+  .image#{$num} {
+    @include pc_work;
+    background-image: url(../img/work#{$num}.jpg);
+  }
 }
-.image008{
-  background-image: url(../img/work02.jpg);
-  @include pc_work;
-}
-.image007{
-  background-image: url(../img/work03.jpg);
-  @include pc_work;
-}
-.image006{
-  background-image: url(../img/work04.jpg);
-  @include pc_work;
-}
-.image005{
-  background-image: url(../img/work05.jpg);
-  @include pc_work;
-}
-.image004{
-  background-image: url(../img/work06.jpg);
-  @include pc_work;
-}
-.image003{
-  background-image: url(../img/work07.jpg);
-  @include pc_work;
-}
-.image002{
-  background-image: url(../img/work08.jpg);
-  @include pc_work;
-}
-.image001{
-  background-image: url(../img/work09.jpg);
-  @include pc_work;
-}
+
   .caption{
     display: block;
     text-align: center;

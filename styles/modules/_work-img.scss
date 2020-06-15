@@ -1,5 +1,7 @@
 #work {    
-    .work_contents .sp_img{
+    .work_contents{
+
+    .sp_img{
       display: block;
       width: 100%;
     }
@@ -21,42 +23,19 @@
       overflow: hidden;
     }
 
-    .image009{
-      @include work_img;
-      background-image: url(../img/sp_work01.jpg);
+    $num: "";
+    @for $i from 1 through 30 {
+      @if $i < 10 {
+        $num: "0#{$i}";
+      } @else {
+        $num: $i;
+      }
+      .image#{$num} {
+        @include work_img;
+        background-image: url(../img/sp_work#{$num}.jpg);
+      }
     }
-    .image008{
-      @include work_img;
-      background-image: url(../img/sp_work02.jpg);
-    }
-    .image007{
-      @include work_img;
-      background-image: url(../img/sp_work03.jpg);
-    }
-    .image006{
-      @include work_img;
-      background-image: url(../img/sp_work04.jpg);
-    }
-    .image005{
-      @include work_img;
-      background-image: url(../img/sp_work05.jpg);
-    }
-    .image004{
-      @include work_img;
-      background-image: url(../img/sp_work06.jpg);
-    }
-    .image003{
-      @include work_img;
-      background-image: url(../img/sp_work07.jpg);
-    }
-    .image002{
-      @include work_img;
-      background-image: url(../img/sp_work08.jpg);
-    }
-    .image001{
-      @include work_img;
-      background-image: url(../img/sp_work09.jpg);
-    }
+
     .caption{
       display: none;
     }
@@ -66,4 +45,5 @@
       font-size: 1.1rem;
       font-weight: lighter;
     }
+  }
 }

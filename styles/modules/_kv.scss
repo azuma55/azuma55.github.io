@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 1) inset;
-    z-index: 10;
+    z-index: 2;
   }
 
   @mixin sphero{
@@ -55,56 +55,63 @@
     0% { opacity: 0; }
     12%{opacity: 1;}
     37%{opacity: 1;}
-    50%{opacity: 0; transform: scale(1.07); z-index:9;}
+    50%{opacity: 0; transform: scale(1.07); z-index:3;}
  }
   @keyframes fadein {
     0% { opacity: 0; }
     12%{opacity: 1;}
     37%{opacity: 1;}
-    50%{opacity: 0; transform: scale(1.07); z-index:9;}
- }
- .boxString{
-  position: absolute;
-  display: inline-block;
-  padding: 7px;
-  top: 80%;
-  width: 24%;
-  opacity: 0;
-  z-index: 11;
-  -webkit-animation: txtfade 24s infinite;
-  animation: txtfade 24s infinite;
-}
-@mixin txtanime{
-  font-size: 2rem;
-  color: $cWhite;
-  border-bottom: 1px solid $cWhite;
-  text-align: center;
-}
-.txt1{
-  @include txtanime;
-}
-.txt2{
-  @include txtanime;
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
+    50%{opacity: 0; transform: scale(1.07); z-index:3;}
+  }
+  .boxString{
+    position: absolute;
+    display: inline-block;
+    padding: 7px;
+    bottom: 13%;
+    width: 30%;
+    right: 0;
+    opacity: 0;
+    z-index: 4;
+    border-bottom: 1px solid $cWhite;
+    -webkit-animation: txtfade 24s infinite;
+    animation: txtfade 24s infinite;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size:1.3rem;
+  }
+  @mixin txtanime{
+    font-size: 2rem;
+    color: $cWhite;
+    text-align: center;
+  }
+  .txt1{
+    @include txtanime;
+  }
+  .txt2{
+    @include txtanime;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
 
-.txt3{
-  @include txtanime;
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
-}
+  .txt3{
+    @include txtanime;
+    -webkit-animation-delay: 16s;
+    animation-delay: 16s;
+  }
 
-@-webkit-keyframes txtfade {
-  0% {opacity: 0;}
-  18%{opacity: 1;}
-  37%{opacity: 1;}
-  50%{opacity: 0;}
-}
-@keyframes txtfade {
-  0% {opacity: 0;}
-  18%{opacity: 1;}
-  37%{opacity: 1;}
-  50%{opacity: 0;}
-}
-}
+  @-webkit-keyframes txtfade {
+    0% {opacity: 0;}
+    18%{opacity: 1;}
+    37%{opacity: 1;}
+    50%{opacity: 0;}
+  }
+  @keyframes txtfade {
+    0% {opacity: 0;}
+    18%{opacity: 1;}
+    37%{opacity: 1;}
+    50%{opacity: 0;}
+  }
+  }
