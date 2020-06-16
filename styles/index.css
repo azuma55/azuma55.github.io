@@ -1,4 +1,75 @@
 @charset "UTF-8";
+.loader-wrap {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 50;
+}
+
+.loader {
+  position: relative;
+  z-index: 20;
+}
+
+.loader .load_img {
+  width: 20rem;
+  transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: rotate-anime 1.7s infinite;
+          animation: rotate-anime 1.7s infinite;
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+}
+
+@-webkit-keyframes rotate-anime {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anime {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loader .load_imgtop {
+  position: absolute;
+  top: 57px;
+  right: 25px;
+  bottom: 0;
+  width: 16rem;
+  height: auto;
+}
+
+.loader p {
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -350,9 +421,6 @@
 }
 
 /** ABOUT要素 **/
-#news {
-  /** 以下slick関連 **/
-}
 
 #news h2 {
   background-image: url(../img/sp_h2_news.svg);
@@ -1333,76 +1401,6 @@ section {
   overflow-x: hidden;
 }
 
-.loader-wrap {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 50;
-}
-
-.loader {
-  position: relative;
-  z-index: 20;
-}
-
-.loader .load_img {
-  width: 20rem;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  -webkit-animation: rotate-anime 2.5s linear infinite;
-          animation: rotate-anime 2.5s linear infinite;
-}
-
-@-webkit-keyframes rotate-anime {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-anime {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.loader .load_imgtop {
-  position: absolute;
-  top: 57px;
-  right: 25px;
-  bottom: 0;
-  width: 16rem;
-  height: auto;
-}
-
-.loader p {
-  color: #000;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 6rem;
-}
-
 .content {
   padding: inherit;
 }
@@ -1731,9 +1729,6 @@ Stylesheet: 1280px以上のモニタで適用
     background-size: 2rem;
   }
   /** WORK **/
-  #work {
-    /** modal **/
-  }
   #work h2 {
     background: url(../img/h2_work.svg) no-repeat;
     background-position-x: 3.5rem;

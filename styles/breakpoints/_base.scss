@@ -38,6 +38,57 @@ body {
   }
 }
 
+.loader-wrap {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background:$cWhite;
+  z-index: 50;
+}
+
+.loader {
+position: relative;
+z-index: 20;
+
+.load_img{
+  width: 20rem;
+  transform: rotate(360deg);
+  transition: 1s;
+  animation: rotate-anime 1.7s infinite;
+  -ms-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+}
+
+  @keyframes rotate-anime {
+    0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+  }
+
+.load_imgtop{
+  position: absolute;
+  top: 57px;
+  right: 25px;
+  bottom: 0;
+  width: 16rem;
+  height: auto;
+}
+
+p{
+  color: $cBlack;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -121,6 +172,7 @@ section {
   padding: 0 12rem;
 }
 
+
 .all_container {
   position: relative;
   top: 5rem;
@@ -129,51 +181,6 @@ section {
   height: auto;
   overflow-x: hidden;
 }
-
-.loader-wrap {
-	  position: fixed;
-	  display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background:$cWhite;
-    z-index: 50;
-}
-
-.loader {
-  position: relative;
-  z-index: 20;
-
-  .load_img{
-    width: 20rem;
-    transform: rotateZ(45deg);
-    transition: 0.8s;
-    animation: rotate-anime 2.5s linear infinite;
-  }
-
-    @keyframes rotate-anime {
-      0%  {transform: rotate(0);}
-      100%  {transform: rotate(360deg);}
-    }
-
-  .load_imgtop{
-    position: absolute;
-    top: 57px;
-    right: 25px;
-    bottom: 0;
-    width: 16rem;
-    height: auto;
-  }
-
-  p{
-    color: $cBlack;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 6rem;
-  }
-}
-
 
 .content {
   padding: inherit;
