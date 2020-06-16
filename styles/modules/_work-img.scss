@@ -1,17 +1,15 @@
-#work {    
-    .work_contents{
-
-    .sp_img{
-      display: block;
-      width: 100%;
-    }
-
+#work {
     h2 {
       background-image: url(../img/sp_h2_work.svg);
       background-repeat: no-repeat;
       background-position-x: 2rem;
       background-size: 12rem;
       padding-bottom: 1rem;
+    }
+    .work_contents{
+    .sp_img{
+      display: block;
+      width: 100%;
     }
   
     @mixin work_img{

@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 1) inset;
-    z-index: 2;
+    z-index: 4;
   }
 
   @mixin sphero{
@@ -69,18 +69,22 @@
     padding: 7px;
     bottom: 13%;
     width: 30%;
-    right: 0;
     opacity: 0;
     z-index: 4;
     border-bottom: 1px solid $cWhite;
+    text-shadow: 0 0 0.2em rgba(0,0,0,0.5);
     -webkit-animation: txtfade 24s infinite;
     animation: txtfade 24s infinite;
   }
   h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight:normal;
+    text-shadow: 0 0 0.2em rgba(0,0,0,0.5);
   }
   p{
-    font-size:1.3rem;
+    font-size:1.5rem;
+    line-height:0.95em;
+    text-shadow: 0 0 0.2em rgba(0,0,0,0.5);
   }
   @mixin txtanime{
     font-size: 2rem;

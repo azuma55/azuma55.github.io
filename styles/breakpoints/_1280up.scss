@@ -4,11 +4,11 @@ Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
 @media all and (min-width: 1280px) {
-  .hero{
+  /**.hero{
     .boxString{
       bottom: 20%;
     }
-  }
+  }**/
   #news 
       .prev-arrow , .next-arrow{
       margin: 9rem 0;

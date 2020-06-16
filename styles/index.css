@@ -29,7 +29,7 @@
   left: 0;
   -webkit-box-shadow: 0px 0px 47px 0px black inset;
           box-shadow: 0px 0px 47px 0px black inset;
-  z-index: 2;
+  z-index: 4;
 }
 
 .hero .src1 {
@@ -105,20 +105,24 @@
   padding: 7px;
   bottom: 13%;
   width: 30%;
-  right: 0;
   opacity: 0;
   z-index: 4;
   border-bottom: 1px solid #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   -webkit-animation: txtfade 24s infinite;
   animation: txtfade 24s infinite;
 }
 
 .hero h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 0.95em;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
 }
 
 .hero .txt1 {
@@ -442,17 +446,17 @@
 }
 
 /** NEWS要素 **/
-#work .work_contents .sp_img {
-  display: block;
-  width: 100%;
-}
-
-#work .work_contents h2 {
+#work h2 {
   background-image: url(../img/sp_h2_work.svg);
   background-repeat: no-repeat;
   background-position-x: 2rem;
   background-size: 12rem;
   padding-bottom: 1rem;
+}
+
+#work .work_contents .sp_img {
+  display: block;
+  width: 100%;
 }
 
 #work .work_contents .image01 {
@@ -1318,23 +1322,24 @@ section {
 .loader,
 .loader:before,
 .loader:after {
+  width: 1em;
+  height: 4em;
   background: #fff;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
 }
 
 .loader {
-  color: #fff;
-  text-indent: -9999em;
-  margin: 88px auto;
   position: relative;
+  margin: 88px auto;
+  color: #fff;
   font-size: 11px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
+  text-indent: -9999em;
+  z-index: 20;
 }
 
 .loader:before,
@@ -1485,9 +1490,11 @@ Stylesheet: 1280px以上のモニタで適用
 }
 
 @media all and (min-width: 1280px) and (min-width: 1280px) {
-  .hero .boxString {
-    bottom: 20%;
-  }
+  /**.hero{
+    .boxString{
+      bottom: 20%;
+    }
+  }**/
   #news .prev-arrow, #news .next-arrow, .next-arrow {
     margin: 9rem 0;
   }
@@ -1582,17 +1589,17 @@ Stylesheet: 1280px以上のモニタで適用
   /** KV **/
   .hero {
     width: 100%;
-    height: 100.55vh;
+    min-height: 100vh;
     margin-bottom: 14rem;
   }
   .hero:after {
-    height: 100.55vh;
+    height: 100vh;
     -webkit-box-shadow: 0px 0px 128px 0px black inset;
             box-shadow: 0px 0px 128px 0px black inset;
   }
   .hero .src1 {
     width: 100%;
-    height: 100.55vh;
+    min-height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -1600,7 +1607,7 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .hero .src2 {
     width: 100%;
-    height: 100.55vh;
+    min-height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -1610,7 +1617,7 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .hero .src3 {
     width: 100%;
-    height: 100.55vh;
+    min-height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -1618,8 +1625,11 @@ Stylesheet: 1280px以上のモニタで適用
     -webkit-animation-delay: 16s;
     animation-delay: 16s;
   }
-  .hero .txt1, .hero .txt2, .hero .txt3 {
-    font-size: 3.5rem;
+  .hero .boxString h3 {
+    font-size: 3rem;
+  }
+  .hero .boxString p {
+    font-size: 2rem;
   }
   /** ABOUT **/
   #about h2 {
@@ -1971,16 +1981,13 @@ Stylesheet: 1280px以上のモニタで適用
 }
 
 @media all and (max-width: 480px) and (max-width: 480px) {
-  .hero .boxString {
-    width: 45%;
-  }
-  .hero h3 {
+  .hero .boxString h3 {
     font-size: 1.5rem;
   }
-  .hero p {
+  .hero .boxString p {
     font-size: 1.1rem;
   }
-  #news .prev-arrow, #news .next-arrow, .next-arrow {
+  #news .prev-arrow, #news .next-arrow, #news .next-arrow {
     width: 4rem;
     height: 15rem;
     background-size: 2rem;

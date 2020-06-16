@@ -1,20 +1,20 @@
 @media all and (max-width: 480px) {
 .hero{
     .boxString{
-        width: 45%;
-    }
     h3{
         font-size: 1.5rem;
     }
     p{
         font-size: 1.1rem;
     }
+    }
 }
-#news 
+#news {
     .prev-arrow , .next-arrow{
     width: 4rem;
     height: 15rem;
     background-size: 2rem;
     margin: 5rem 0;
+    }
     }
 }

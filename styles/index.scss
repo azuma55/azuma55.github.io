@@ -8,18 +8,18 @@
 @import 'modules/form-menu'; /** CONTACTメニュー **/
 @import 'modules/mobile-menu'; /** ハンバーガーメニュー **/
 
-@import "breakpoints/base";
+@import 'breakpoints/base';
 
 @media (min-width: 1280px) {
-  @import "breakpoints/_1280up";
+  @import 'breakpoints/_1280up';
 }
 @media (min-width: 849px) {
-  @import "breakpoints/850up";
+  @import 'breakpoints/850up';
 }
 @media (max-width: 480px) {
-  @import "breakpoints/_480up";
+  @import 'breakpoints/_480up';
 }
 
 @media print {
-  @import "breakpoints/print";
+  @import 'breakpoints/print';
 }
