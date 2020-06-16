@@ -41,6 +41,8 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="js/smooth.js"></script>
 <script type="text/javascript" src="js/loding.js"></script>
+<script type="text/javascript" src="js/current.js"></script>
+
 
 <header>
     <div class="inner">
@@ -49,11 +51,11 @@
         </div>
     <div class="nav-global">
         <ul class="flexbox">
-            <li><a href="#" class="link">HOME</a></li>
-            <li><a href="#about"  class="link">ABOUT</a></li>
-            <li><a href="#news"  class="link">NEWS</a></li>
-            <li><a href="#work"  class="link">WORK</a></li>
-            <li><a href="#contact" class="link">CONTACT</a></li>
+            <li><a href="#home" id="top_link_js" class="link">HOME</a></li>
+            <li><a href="#about"  id="about_link_js" class="link">ABOUT</a></li>
+            <li><a href="#news"  id="news_link_js" class="link">NEWS</a></li>
+            <li><a href="#work"  id="work_link_js" class="link">WORK</a></li>
+            <li><a href="#contact" id="contact_link_js" class="link">CONTACT</a></li>
         </ul>
         <ul class="sns">
             <li><a href="https://twitter.com/swxpi" target="_blank"><img src="img/Twitter.png" onmouseover="this.src='img/Twitter_hover.png'" onmouseout="this.src='img/Twitter.png'"></a></li>
@@ -73,7 +75,7 @@
             <label for="menuToggle"></label>
         <div class="menucont">
             <ul>
-                <li><a href="#" onclick="$('input').prop('checked', false)">HOME</a></li>
+                <li><a href="#home" onclick="$('input').prop('checked', false)">HOME</a></li>
                 <li><a href="#about" onclick="$('input').prop('checked', false)">ABOUT</a></li>
                 <li><a href="#news" onclick="$('input').prop('checked', false)">NEWS</a></li>
                 <li><a href="#work" onclick="$('input').prop('checked', false)">WORK</a></li>
@@ -94,26 +96,28 @@
         <div class="loader">Loading...</div>
     </div>
     <!-- KV -->
-<div class="hero">
-    <div class="heroimg src1">廻転する不在</div>
-    <div class="heroimg src2">自連車</div>
-    <div class="heroimg src3">他転車</div>
-    <div class="boxString txt1">
-        <h3>廻転する不在</h3>
-        <p>2020 立体</p>
+<section class="position-now" id="home">
+    <div class="hero">
+        <div class="heroimg src1">廻転する不在</div>
+        <div class="heroimg src2">自連車</div>
+        <div class="heroimg src3">他転車</div>
+        <div class="boxString txt1">
+            <h3>廻転する不在</h3>
+            <p>2020 立体</p>
+        </div>
+        <div class="boxString txt2">
+            <h3>自連車</h3>
+            <p>2020 立体</p>
+        </div>
+        <div class="boxString txt3">
+            <h3>他転車</h3>
+            <p>2018 立体</p>
+        </div>
     </div>
-    <div class="boxString txt2">
-        <h3>自連車</h3>
-        <p>2020 立体</p>
-    </div>
-    <div class="boxString txt3">
-        <h3>他転車</h3>
-        <p>2018 立体</p>
-    </div>
-</div>
+</section>
 
 <!-- ABOUT -->
-<section id="about">
+<section class="position-now" id="about">
     <h2>ABOUT</h2>
     <div class="content">
     <div class="column column_reverse">
@@ -194,7 +198,7 @@
 </section>
 
 <!-- NEWS -->
-<section id="news">
+<section class="position-now" id="news">
     <h2>NEWS</h2>
     <div class="content">
         <ul class="column slider">
@@ -557,7 +561,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section class="position-now" id="contact">
         <h2>CONTACT</h2>
         <div class="content">
             <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeM2X9o3VUG4d-aWcrpHFH8hiGaW86VlBD-jG2PVgFHL0IETg/formResponse" target="_self" method="POST" id="mG61Hd">

@@ -201,6 +201,12 @@ section {
   flex-direction: column;
 }
 
+.link-current {
+  border-bottom: 1px solid #fff;
+  transform-origin: right top;
+  transition: transform 0.1 0.5s;
+}
+
 header {
   position: fixed;
   align-items: center;

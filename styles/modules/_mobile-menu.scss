@@ -2,7 +2,7 @@ header .nav_btn {
     position: fixed;
     top: 1rem;
     right: 0;
-    z-index: 1;
+    z-index: 30;
 
     #menuToggle {
       &:checked ~ {
@@ -26,7 +26,7 @@ header .nav_btn {
           content: '';
           transform: rotate(45deg);
           background-color: $cWhite;
-          z-index: 1;
+          z-index: 30;
         }
   
           &:after {
@@ -36,7 +36,7 @@ header .nav_btn {
             content: '';
             transform: rotate(-45deg);
             background-color: $cWhite;
-            z-index: 1;
+            z-index: 30;
           }
         }
       }
@@ -53,7 +53,7 @@ header .nav_btn {
       right: 2rem;
       padding: 5px;
       cursor: pointer;
-      z-index: 100;
+      z-index: 30;
   
       &:hover .open {
         &:before {
